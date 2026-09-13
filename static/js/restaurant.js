@@ -61,7 +61,7 @@
     el.innerHTML = skeletonCards(3, 'h-10');
     const { data, error } = await FoodFlowAPI.get('/api/restaurants/' + encodeURIComponent(rid) + '/menu');
     if (error) { el.innerHTML = errorState(error.message, 'popular-retry'); qs('#popular-retry')?.addEventListener('click', () => loadPopularItems(rid)); return; }
-    const items = (data && (data.categories || [])).flatMap((c) => c.items || []).slice(0, 5);
+    const items = (data && data.items || []).slice(0, 5);
     el.innerHTML = items.length
       ? items.map((i) => '<div class="flex justify-between text-sm py-1.5 border-b border-border last:border-0"><span>' + escapeHtml(i.name) + '</span><span class="text-ink-soft">' + money(i.price) + '</span></div>').join('')
       : emptyState({ title: 'No menu items yet', message: 'Add your first dish to see it appear here.' });
@@ -104,7 +104,8 @@
     container.innerHTML = skeletonCards(4, 'h-16');
     const { data, error } = await FoodFlowAPI.get('/api/restaurants/' + encodeURIComponent(rid) + '/menu');
     if (error) { container.innerHTML = errorState(error.message, 'menu-mgmt-retry'); qs('#menu-mgmt-retry')?.addEventListener('click', loadMenuManagement); return; }
-    const categories = (data && (data.categories || data)) || [];
+    const rawCategories = (data && data.categories) || (Array.isArray(data) ? data : []) || [];
+    const categories = window.FoodFlowUI.groupMenuByCategory(rawCategories, (data && data.items) || []);
     if (!categories.length) {
       container.innerHTML = emptyState({ title: 'No menu items yet', message: 'Use the form above to add your first category and dish.' });
       return;

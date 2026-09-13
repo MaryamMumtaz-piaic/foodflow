@@ -61,7 +61,31 @@
   function escapeHtml(str) {
     return String(str == null ? '' : str).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   }
-  window.FoodFlowUI = { skeletonCards, errorState, emptyState, escapeHtml, qs, qsa };
+  function groupMenuByCategory(rawCategories, rawItems) {
+    // The /api/restaurants/{id}/menu response carries categories and items
+    // as two separate flat lists (each item has a category_id); group them
+    // here so callers can render "category -> its items" directly.
+    rawCategories = rawCategories || [];
+    rawItems = rawItems || [];
+    if (!rawItems.length) {
+      return rawCategories.map((cat) => Object.assign({}, cat, { items: cat.items || cat.menu_items || [] }));
+    }
+    const byCategory = new Map();
+    rawCategories.forEach((cat) => byCategory.set(cat.id, Object.assign({}, cat, { items: [] })));
+    const uncategorized = [];
+    rawItems.forEach((item) => {
+      const bucket = byCategory.get(item.category_id);
+      if (bucket) bucket.items.push(item);
+      else uncategorized.push(item);
+    });
+    const result = rawCategories
+      .slice()
+      .sort((a, b) => (a.display_order || 0) - (b.display_order || 0))
+      .map((cat) => byCategory.get(cat.id));
+    if (uncategorized.length) result.push({ id: '_uncategorized', name: 'Other items', items: uncategorized });
+    return result;
+  }
+  window.FoodFlowUI = { skeletonCards, errorState, emptyState, escapeHtml, qs, qsa, groupMenuByCategory };
 
   /* ---------- Modal helpers (accessible: focus trap + Escape to close) ---------- */
   function openModal(backdropEl) {

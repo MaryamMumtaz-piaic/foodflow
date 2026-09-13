@@ -360,7 +360,9 @@
       qs('#menu-retry')?.addEventListener('click', () => loadMenu(restaurantId));
       return;
     }
-    const categories = (data && (data.categories || data)) || [];
+    const rawCategories = (data && data.categories) || (Array.isArray(data) ? data : []) || [];
+    const rawItems = (data && data.items) || [];
+    const categories = window.FoodFlowUI.groupMenuByCategory(rawCategories, rawItems);
     fullMenuCache = categories;
     renderMenu(categories, restaurantId);
   }
