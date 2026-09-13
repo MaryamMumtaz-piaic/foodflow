@@ -1,0 +1,13 @@
+{% extends "_base.html" %}
+{% block title %}Order history — FoodFlow{% endblock %}
+{% block meta_description %}View your previous FoodFlow orders, reorder favorites, and leave reviews.{% endblock %}
+{% block body_attrs %}data-page="order-history"{% endblock %}
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h1 class="font-display text-3xl font-bold mb-6">Order history</h1>
+  <div id="order-history-list" class="space-y-4"></div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+<script src="/static/js/customer.js"></script>
+{% endblock %}

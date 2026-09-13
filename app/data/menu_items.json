@@ -1,0 +1,1666 @@
+[
+  {
+    "id": "item1",
+    "restaurant_id": "res1",
+    "category_id": "cat_res1_1",
+    "name": "Seekh Kabab Platter",
+    "description": "Seekh Kabab Platter prepared with beef mince, onion, garlic and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 950.0,
+    "promotional_price": 860.0,
+    "ingredients": [
+      "beef mince",
+      "onion",
+      "garlic",
+      "spices"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "hot",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.8,
+    "order_count": 102
+  },
+  {
+    "id": "item2",
+    "restaurant_id": "res1",
+    "category_id": "cat_res1_2",
+    "name": "Chicken Tikka",
+    "description": "Chicken Tikka prepared with chicken, yogurt, spices and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 750.0,
+    "promotional_price": null,
+    "ingredients": [
+      "chicken",
+      "yogurt",
+      "spices"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "hot",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.2,
+    "order_count": 98
+  },
+  {
+    "id": "item3",
+    "restaurant_id": "res1",
+    "category_id": "cat_res1_3",
+    "name": "Malai Boti",
+    "description": "Malai Boti prepared with chicken, cream, cheese and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 850.0,
+    "promotional_price": null,
+    "ingredients": [
+      "chicken",
+      "cream",
+      "cheese"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.1,
+    "order_count": 58
+  },
+  {
+    "id": "item4",
+    "restaurant_id": "res1",
+    "category_id": "cat_res1_4",
+    "name": "Mutton Karahi (Half)",
+    "description": "Mutton Karahi (Half) prepared with mutton, tomato, ginger and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 1600.0,
+    "promotional_price": null,
+    "ingredients": [
+      "mutton",
+      "tomato",
+      "ginger",
+      "garlic"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "hot",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.9,
+    "order_count": 179
+  },
+  {
+    "id": "item5",
+    "restaurant_id": "res1",
+    "category_id": "cat_res1_5",
+    "name": "Dal Makhani",
+    "description": "Dal Makhani prepared with lentils, butter, cream and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 550.0,
+    "promotional_price": null,
+    "ingredients": [
+      "lentils",
+      "butter",
+      "cream"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian",
+      "halal"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.6,
+    "order_count": 167
+  },
+  {
+    "id": "item6",
+    "restaurant_id": "res1",
+    "category_id": "cat_res1_1",
+    "name": "Garlic Naan",
+    "description": "Garlic Naan prepared with flour, garlic, butter and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 120.0,
+    "promotional_price": null,
+    "ingredients": [
+      "flour",
+      "garlic",
+      "butter"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.3,
+    "order_count": 67
+  },
+  {
+    "id": "item7",
+    "restaurant_id": "res2",
+    "category_id": "cat_res2_1",
+    "name": "Chicken Karahi (Full)",
+    "description": "Chicken Karahi (Full) prepared with chicken, tomato, green chili and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 1800.0,
+    "promotional_price": 1620.0,
+    "ingredients": [
+      "chicken",
+      "tomato",
+      "green chili",
+      "ginger"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "hot",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.2,
+    "order_count": 74
+  },
+  {
+    "id": "item8",
+    "restaurant_id": "res2",
+    "category_id": "cat_res2_2",
+    "name": "Lahori Chargha",
+    "description": "Lahori Chargha prepared with chicken, spices, oil and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 1400.0,
+    "promotional_price": null,
+    "ingredients": [
+      "chicken",
+      "spices",
+      "oil"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "hot",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.5,
+    "order_count": 61
+  },
+  {
+    "id": "item9",
+    "restaurant_id": "res2",
+    "category_id": "cat_res2_3",
+    "name": "Aloo Paratha",
+    "description": "Aloo Paratha prepared with flour, potato, butter and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 200.0,
+    "promotional_price": null,
+    "ingredients": [
+      "flour",
+      "potato",
+      "butter"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.0,
+    "order_count": 19
+  },
+  {
+    "id": "item10",
+    "restaurant_id": "res2",
+    "category_id": "cat_res2_4",
+    "name": "Nihari",
+    "description": "Nihari prepared with beef, flour, spices and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 950.0,
+    "promotional_price": null,
+    "ingredients": [
+      "beef",
+      "flour",
+      "spices"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "hot",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.7,
+    "order_count": 85
+  },
+  {
+    "id": "item11",
+    "restaurant_id": "res2",
+    "category_id": "cat_res2_5",
+    "name": "Chana Chaat",
+    "description": "Chana Chaat prepared with chickpeas, onion, tomato and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 350.0,
+    "promotional_price": null,
+    "ingredients": [
+      "chickpeas",
+      "onion",
+      "tomato",
+      "tamarind"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "spice_level": "medium",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.9,
+    "order_count": 59
+  },
+  {
+    "id": "item12",
+    "restaurant_id": "res2",
+    "category_id": "cat_res2_1",
+    "name": "Kheer",
+    "description": "Kheer prepared with milk, rice, sugar and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 300.0,
+    "promotional_price": null,
+    "ingredients": [
+      "milk",
+      "rice",
+      "sugar",
+      "almond"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.8,
+    "order_count": 85
+  },
+  {
+    "id": "item13",
+    "restaurant_id": "res3",
+    "category_id": "cat_res3_1",
+    "name": "Margherita Pizza",
+    "description": "Margherita Pizza prepared with flour, tomato, mozzarella cheese and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 1200.0,
+    "promotional_price": 1080.0,
+    "ingredients": [
+      "flour",
+      "tomato",
+      "mozzarella cheese",
+      "basil"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Regular",
+    "add_ons": [
+      {
+        "id": "addon_13_1",
+        "name": "Extra Cheese",
+        "price": 100.0
+      },
+      {
+        "id": "addon_13_2",
+        "name": "Extra Spicy",
+        "price": 0.0
+      }
+    ],
+    "is_available": true,
+    "rating": 4.5,
+    "order_count": 106
+  },
+  {
+    "id": "item14",
+    "restaurant_id": "res3",
+    "category_id": "cat_res3_2",
+    "name": "Pepperoni Pizza",
+    "description": "Pepperoni Pizza prepared with flour, cheese, pepperoni and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 1450.0,
+    "promotional_price": null,
+    "ingredients": [
+      "flour",
+      "cheese",
+      "pepperoni",
+      "tomato sauce"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Family",
+    "add_ons": [
+      {
+        "id": "addon_14_1",
+        "name": "Extra Cheese",
+        "price": 100.0
+      },
+      {
+        "id": "addon_14_2",
+        "name": "Extra Spicy",
+        "price": 0.0
+      }
+    ],
+    "is_available": true,
+    "rating": 4.2,
+    "order_count": 72
+  },
+  {
+    "id": "item15",
+    "restaurant_id": "res3",
+    "category_id": "cat_res3_3",
+    "name": "Fettuccine Alfredo",
+    "description": "Fettuccine Alfredo prepared with pasta, cream, parmesan cheese and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 1100.0,
+    "promotional_price": null,
+    "ingredients": [
+      "pasta",
+      "cream",
+      "parmesan cheese",
+      "butter"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.9,
+    "order_count": 148
+  },
+  {
+    "id": "item16",
+    "restaurant_id": "res3",
+    "category_id": "cat_res3_4",
+    "name": "Chicken Lasagna",
+    "description": "Chicken Lasagna prepared with pasta, chicken, cheese and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 1350.0,
+    "promotional_price": null,
+    "ingredients": [
+      "pasta",
+      "chicken",
+      "cheese",
+      "tomato sauce"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.9,
+    "order_count": 154
+  },
+  {
+    "id": "item17",
+    "restaurant_id": "res3",
+    "category_id": "cat_res3_5",
+    "name": "Bruschetta",
+    "description": "Bruschetta prepared with bread, tomato, basil and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 650.0,
+    "promotional_price": null,
+    "ingredients": [
+      "bread",
+      "tomato",
+      "basil",
+      "olive oil"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.8,
+    "order_count": 107
+  },
+  {
+    "id": "item18",
+    "restaurant_id": "res3",
+    "category_id": "cat_res3_1",
+    "name": "Tiramisu",
+    "description": "Tiramisu prepared with mascarpone cheese, coffee, cocoa and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 550.0,
+    "promotional_price": null,
+    "ingredients": [
+      "mascarpone cheese",
+      "coffee",
+      "cocoa",
+      "egg"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.8,
+    "order_count": 40
+  },
+  {
+    "id": "item19",
+    "restaurant_id": "res4",
+    "category_id": "cat_res4_1",
+    "name": "Chicken Manchurian",
+    "description": "Chicken Manchurian prepared with chicken, soy sauce, garlic and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 950.0,
+    "promotional_price": 860.0,
+    "ingredients": [
+      "chicken",
+      "soy sauce",
+      "garlic",
+      "capsicum"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "medium",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.2,
+    "order_count": 198
+  },
+  {
+    "id": "item20",
+    "restaurant_id": "res4",
+    "category_id": "cat_res4_2",
+    "name": "Vegetable Spring Rolls",
+    "description": "Vegetable Spring Rolls prepared with cabbage, carrot, flour wrapper and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 550.0,
+    "promotional_price": null,
+    "ingredients": [
+      "cabbage",
+      "carrot",
+      "flour wrapper"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.8,
+    "order_count": 44
+  },
+  {
+    "id": "item21",
+    "restaurant_id": "res4",
+    "category_id": "cat_res4_3",
+    "name": "Beef Chowmein",
+    "description": "Beef Chowmein prepared with beef, noodles, soy sauce and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 900.0,
+    "promotional_price": null,
+    "ingredients": [
+      "beef",
+      "noodles",
+      "soy sauce",
+      "vegetables"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "medium",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.7,
+    "order_count": 179
+  },
+  {
+    "id": "item22",
+    "restaurant_id": "res4",
+    "category_id": "cat_res4_4",
+    "name": "Sweet and Sour Chicken",
+    "description": "Sweet and Sour Chicken prepared with chicken, pineapple, capsicum and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 1000.0,
+    "promotional_price": null,
+    "ingredients": [
+      "chicken",
+      "pineapple",
+      "capsicum",
+      "vinegar"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.4,
+    "order_count": 103
+  },
+  {
+    "id": "item23",
+    "restaurant_id": "res4",
+    "category_id": "cat_res4_5",
+    "name": "Egg Fried Rice",
+    "description": "Egg Fried Rice prepared with rice, egg, soy sauce and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 650.0,
+    "promotional_price": null,
+    "ingredients": [
+      "rice",
+      "egg",
+      "soy sauce",
+      "spring onion"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.4,
+    "order_count": 124
+  },
+  {
+    "id": "item24",
+    "restaurant_id": "res4",
+    "category_id": "cat_res4_1",
+    "name": "Hot and Sour Soup",
+    "description": "Hot and Sour Soup prepared with chicken stock, vinegar, chili and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 450.0,
+    "promotional_price": null,
+    "ingredients": [
+      "chicken stock",
+      "vinegar",
+      "chili",
+      "cornstarch"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "hot",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": false,
+    "rating": 3.9,
+    "order_count": 146
+  },
+  {
+    "id": "item25",
+    "restaurant_id": "res5",
+    "category_id": "cat_res5_1",
+    "name": "Zinger Burger Combo",
+    "description": "Zinger Burger Combo prepared with chicken fillet, bun, lettuce and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 850.0,
+    "promotional_price": 760.0,
+    "ingredients": [
+      "chicken fillet",
+      "bun",
+      "lettuce",
+      "mayo"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "medium",
+    "portion_size": "Regular",
+    "add_ons": [
+      {
+        "id": "addon_25_1",
+        "name": "Extra Cheese",
+        "price": 100.0
+      },
+      {
+        "id": "addon_25_2",
+        "name": "Extra Spicy",
+        "price": 0.0
+      }
+    ],
+    "is_available": true,
+    "rating": 4.5,
+    "order_count": 34
+  },
+  {
+    "id": "item26",
+    "restaurant_id": "res5",
+    "category_id": "cat_res5_2",
+    "name": "Beef Cheese Burger",
+    "description": "Beef Cheese Burger prepared with beef patty, cheese, bun and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 750.0,
+    "promotional_price": null,
+    "ingredients": [
+      "beef patty",
+      "cheese",
+      "bun",
+      "onion"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Family",
+    "add_ons": [
+      {
+        "id": "addon_26_1",
+        "name": "Extra Cheese",
+        "price": 100.0
+      },
+      {
+        "id": "addon_26_2",
+        "name": "Extra Spicy",
+        "price": 0.0
+      }
+    ],
+    "is_available": true,
+    "rating": 4.8,
+    "order_count": 197
+  },
+  {
+    "id": "item27",
+    "restaurant_id": "res5",
+    "category_id": "cat_res5_3",
+    "name": "Loaded Fries",
+    "description": "Loaded Fries prepared with potato, cheese, beef and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 550.0,
+    "promotional_price": null,
+    "ingredients": [
+      "potato",
+      "cheese",
+      "beef",
+      "sauce"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "medium",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.7,
+    "order_count": 92
+  },
+  {
+    "id": "item28",
+    "restaurant_id": "res5",
+    "category_id": "cat_res5_4",
+    "name": "Veggie Burger",
+    "description": "Veggie Burger prepared with vegetable patty, bun, lettuce and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 650.0,
+    "promotional_price": null,
+    "ingredients": [
+      "vegetable patty",
+      "bun",
+      "lettuce",
+      "tomato"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Regular",
+    "add_ons": [
+      {
+        "id": "addon_28_1",
+        "name": "Extra Cheese",
+        "price": 100.0
+      },
+      {
+        "id": "addon_28_2",
+        "name": "Extra Spicy",
+        "price": 0.0
+      }
+    ],
+    "is_available": true,
+    "rating": 3.9,
+    "order_count": 45
+  },
+  {
+    "id": "item29",
+    "restaurant_id": "res5",
+    "category_id": "cat_res5_5",
+    "name": "Grilled Chicken Wrap",
+    "description": "Grilled Chicken Wrap prepared with chicken, tortilla, lettuce and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 700.0,
+    "promotional_price": null,
+    "ingredients": [
+      "chicken",
+      "tortilla",
+      "lettuce",
+      "sauce"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.5,
+    "order_count": 189
+  },
+  {
+    "id": "item30",
+    "restaurant_id": "res5",
+    "category_id": "cat_res5_1",
+    "name": "Chocolate Milkshake",
+    "description": "Chocolate Milkshake prepared with milk, chocolate, ice cream and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 400.0,
+    "promotional_price": null,
+    "ingredients": [
+      "milk",
+      "chocolate",
+      "ice cream"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.9,
+    "order_count": 133
+  },
+  {
+    "id": "item31",
+    "restaurant_id": "res6",
+    "category_id": "cat_res6_1",
+    "name": "Butter Chicken",
+    "description": "Butter Chicken prepared with chicken, butter, tomato and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 1150.0,
+    "promotional_price": 1040.0,
+    "ingredients": [
+      "chicken",
+      "butter",
+      "tomato",
+      "cream"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.3,
+    "order_count": 32
+  },
+  {
+    "id": "item32",
+    "restaurant_id": "res6",
+    "category_id": "cat_res6_2",
+    "name": "Palak Paneer",
+    "description": "Palak Paneer prepared with spinach, paneer cheese, cream and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 850.0,
+    "promotional_price": null,
+    "ingredients": [
+      "spinach",
+      "paneer cheese",
+      "cream"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian",
+      "halal"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.9,
+    "order_count": 168
+  },
+  {
+    "id": "item33",
+    "restaurant_id": "res6",
+    "category_id": "cat_res6_3",
+    "name": "Chicken Biryani",
+    "description": "Chicken Biryani prepared with rice, chicken, spices and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 750.0,
+    "promotional_price": null,
+    "ingredients": [
+      "rice",
+      "chicken",
+      "spices",
+      "yogurt"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "hot",
+    "portion_size": "Family",
+    "add_ons": [
+      {
+        "id": "addon_33_1",
+        "name": "Extra Cheese",
+        "price": 100.0
+      },
+      {
+        "id": "addon_33_2",
+        "name": "Extra Spicy",
+        "price": 0.0
+      }
+    ],
+    "is_available": true,
+    "rating": 4.4,
+    "order_count": 44
+  },
+  {
+    "id": "item34",
+    "restaurant_id": "res6",
+    "category_id": "cat_res6_4",
+    "name": "Tandoori Roti",
+    "description": "Tandoori Roti prepared with flour and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 60.0,
+    "promotional_price": null,
+    "ingredients": [
+      "flour"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.6,
+    "order_count": 143
+  },
+  {
+    "id": "item35",
+    "restaurant_id": "res6",
+    "category_id": "cat_res6_5",
+    "name": "Vegetable Korma",
+    "description": "Vegetable Korma prepared with mixed vegetables, cream, cashew and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 700.0,
+    "promotional_price": null,
+    "ingredients": [
+      "mixed vegetables",
+      "cream",
+      "cashew"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian",
+      "halal"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.9,
+    "order_count": 158
+  },
+  {
+    "id": "item36",
+    "restaurant_id": "res6",
+    "category_id": "cat_res6_1",
+    "name": "Gulab Jamun",
+    "description": "Gulab Jamun prepared with milk powder, sugar syrup, flour and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 300.0,
+    "promotional_price": null,
+    "ingredients": [
+      "milk powder",
+      "sugar syrup",
+      "flour"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.2,
+    "order_count": 33
+  },
+  {
+    "id": "item37",
+    "restaurant_id": "res7",
+    "category_id": "cat_res7_1",
+    "name": "Salmon Sushi Platter",
+    "description": "Salmon Sushi Platter prepared with salmon, rice, nori seaweed and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 1800.0,
+    "promotional_price": 1620.0,
+    "ingredients": [
+      "salmon",
+      "rice",
+      "nori seaweed",
+      "wasabi"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "gluten_free"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.8,
+    "order_count": 83
+  },
+  {
+    "id": "item38",
+    "restaurant_id": "res7",
+    "category_id": "cat_res7_2",
+    "name": "California Roll",
+    "description": "California Roll prepared with crab, avocado, cucumber and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 1200.0,
+    "promotional_price": null,
+    "ingredients": [
+      "crab",
+      "avocado",
+      "cucumber",
+      "rice"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "gluten_free"
+    ],
+    "spice_level": "none",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.6,
+    "order_count": 150
+  },
+  {
+    "id": "item39",
+    "restaurant_id": "res7",
+    "category_id": "cat_res7_3",
+    "name": "Chicken Teriyaki",
+    "description": "Chicken Teriyaki prepared with chicken, soy sauce, sesame and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 1400.0,
+    "promotional_price": null,
+    "ingredients": [
+      "chicken",
+      "soy sauce",
+      "sesame",
+      "rice"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.6,
+    "order_count": 129
+  },
+  {
+    "id": "item40",
+    "restaurant_id": "res7",
+    "category_id": "cat_res7_4",
+    "name": "Miso Soup",
+    "description": "Miso Soup prepared with soybean paste, tofu, seaweed and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 450.0,
+    "promotional_price": null,
+    "ingredients": [
+      "soybean paste",
+      "tofu",
+      "seaweed"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 5.0,
+    "order_count": 141
+  },
+  {
+    "id": "item41",
+    "restaurant_id": "res7",
+    "category_id": "cat_res7_5",
+    "name": "Vegetable Tempura",
+    "description": "Vegetable Tempura prepared with mixed vegetables, flour, oil and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 850.0,
+    "promotional_price": null,
+    "ingredients": [
+      "mixed vegetables",
+      "flour",
+      "oil"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.7,
+    "order_count": 126
+  },
+  {
+    "id": "item42",
+    "restaurant_id": "res7",
+    "category_id": "cat_res7_1",
+    "name": "Matcha Ice Cream",
+    "description": "Matcha Ice Cream prepared with green tea, milk, sugar and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 500.0,
+    "promotional_price": null,
+    "ingredients": [
+      "green tea",
+      "milk",
+      "sugar"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.7,
+    "order_count": 140
+  },
+  {
+    "id": "item43",
+    "restaurant_id": "res8",
+    "category_id": "cat_res8_1",
+    "name": "Buddha Bowl",
+    "description": "Buddha Bowl prepared with quinoa, chickpeas, avocado and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 950.0,
+    "promotional_price": 860.0,
+    "ingredients": [
+      "quinoa",
+      "chickpeas",
+      "avocado",
+      "mixed greens"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegan",
+      "vegetarian",
+      "gluten_free"
+    ],
+    "spice_level": "none",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.1,
+    "order_count": 59
+  },
+  {
+    "id": "item44",
+    "restaurant_id": "res8",
+    "category_id": "cat_res8_2",
+    "name": "Vegan Burger",
+    "description": "Vegan Burger prepared with plant patty, vegan bun, lettuce and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 850.0,
+    "promotional_price": null,
+    "ingredients": [
+      "plant patty",
+      "vegan bun",
+      "lettuce",
+      "vegan mayo"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Family",
+    "add_ons": [
+      {
+        "id": "addon_44_1",
+        "name": "Extra Cheese",
+        "price": 100.0
+      },
+      {
+        "id": "addon_44_2",
+        "name": "Extra Spicy",
+        "price": 0.0
+      }
+    ],
+    "is_available": true,
+    "rating": 4.6,
+    "order_count": 181
+  },
+  {
+    "id": "item45",
+    "restaurant_id": "res8",
+    "category_id": "cat_res8_3",
+    "name": "Lentil Soup",
+    "description": "Lentil Soup prepared with lentils, carrot, celery and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 550.0,
+    "promotional_price": null,
+    "ingredients": [
+      "lentils",
+      "carrot",
+      "celery",
+      "vegetable stock"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.6,
+    "order_count": 107
+  },
+  {
+    "id": "item46",
+    "restaurant_id": "res8",
+    "category_id": "cat_res8_4",
+    "name": "Falafel Wrap",
+    "description": "Falafel Wrap prepared with chickpeas, tahini, flatbread and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 750.0,
+    "promotional_price": null,
+    "ingredients": [
+      "chickpeas",
+      "tahini",
+      "flatbread",
+      "vegetables"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "spice_level": "medium",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.5,
+    "order_count": 117
+  },
+  {
+    "id": "item47",
+    "restaurant_id": "res8",
+    "category_id": "cat_res8_5",
+    "name": "Avocado Toast",
+    "description": "Avocado Toast prepared with bread, avocado, lemon and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 650.0,
+    "promotional_price": null,
+    "ingredients": [
+      "bread",
+      "avocado",
+      "lemon",
+      "chili flakes"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.2,
+    "order_count": 68
+  },
+  {
+    "id": "item48",
+    "restaurant_id": "res8",
+    "category_id": "cat_res8_1",
+    "name": "Detox Green Smoothie",
+    "description": "Detox Green Smoothie prepared with spinach, banana, almond milk and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 500.0,
+    "promotional_price": null,
+    "ingredients": [
+      "spinach",
+      "banana",
+      "almond milk"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegan",
+      "vegetarian",
+      "dairy_free"
+    ],
+    "spice_level": "none",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.6,
+    "order_count": 10
+  },
+  {
+    "id": "item49",
+    "restaurant_id": "res9",
+    "category_id": "cat_res9_1",
+    "name": "Chicken Biryani",
+    "description": "Chicken Biryani prepared with rice, chicken, spices and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 450.0,
+    "promotional_price": 400.0,
+    "ingredients": [
+      "rice",
+      "chicken",
+      "spices",
+      "potato"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "hot",
+    "portion_size": "Family",
+    "add_ons": [
+      {
+        "id": "addon_49_1",
+        "name": "Extra Cheese",
+        "price": 100.0
+      },
+      {
+        "id": "addon_49_2",
+        "name": "Extra Spicy",
+        "price": 0.0
+      }
+    ],
+    "is_available": true,
+    "rating": 4.3,
+    "order_count": 155
+  },
+  {
+    "id": "item50",
+    "restaurant_id": "res9",
+    "category_id": "cat_res9_2",
+    "name": "Beef Biryani",
+    "description": "Beef Biryani prepared with rice, beef, spices and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 550.0,
+    "promotional_price": null,
+    "ingredients": [
+      "rice",
+      "beef",
+      "spices"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "hot",
+    "portion_size": "Regular",
+    "add_ons": [
+      {
+        "id": "addon_50_1",
+        "name": "Extra Cheese",
+        "price": 100.0
+      },
+      {
+        "id": "addon_50_2",
+        "name": "Extra Spicy",
+        "price": 0.0
+      }
+    ],
+    "is_available": true,
+    "rating": 3.5,
+    "order_count": 186
+  },
+  {
+    "id": "item51",
+    "restaurant_id": "res9",
+    "category_id": "cat_res9_3",
+    "name": "Raita",
+    "description": "Raita prepared with yogurt, cucumber, mint and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 100.0,
+    "promotional_price": null,
+    "ingredients": [
+      "yogurt",
+      "cucumber",
+      "mint"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian",
+      "halal"
+    ],
+    "spice_level": "none",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.6,
+    "order_count": 22
+  },
+  {
+    "id": "item52",
+    "restaurant_id": "res9",
+    "category_id": "cat_res9_4",
+    "name": "Shami Kabab",
+    "description": "Shami Kabab prepared with beef mince, lentils, spices and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 350.0,
+    "promotional_price": null,
+    "ingredients": [
+      "beef mince",
+      "lentils",
+      "spices"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "medium",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.8,
+    "order_count": 23
+  },
+  {
+    "id": "item53",
+    "restaurant_id": "res9",
+    "category_id": "cat_res9_5",
+    "name": "Firni",
+    "description": "Firni prepared with milk, rice flour, sugar and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 200.0,
+    "promotional_price": null,
+    "ingredients": [
+      "milk",
+      "rice flour",
+      "sugar"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.9,
+    "order_count": 176
+  },
+  {
+    "id": "item54",
+    "restaurant_id": "res9",
+    "category_id": "cat_res9_1",
+    "name": "Chicken 65",
+    "description": "Chicken 65 prepared with chicken, chili, yogurt and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 500.0,
+    "promotional_price": null,
+    "ingredients": [
+      "chicken",
+      "chili",
+      "yogurt"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "halal",
+      "non_vegetarian"
+    ],
+    "spice_level": "hot",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": false,
+    "rating": 3.8,
+    "order_count": 38
+  },
+  {
+    "id": "item55",
+    "restaurant_id": "res10",
+    "category_id": "cat_res10_1",
+    "name": "Beef Tacos (3pc)",
+    "description": "Beef Tacos (3pc) prepared with beef, tortilla, lettuce and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 700.0,
+    "promotional_price": 630.0,
+    "ingredients": [
+      "beef",
+      "tortilla",
+      "lettuce",
+      "cheese"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "medium",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.9,
+    "order_count": 151
+  },
+  {
+    "id": "item56",
+    "restaurant_id": "res10",
+    "category_id": "cat_res10_2",
+    "name": "Chicken Quesadilla",
+    "description": "Chicken Quesadilla prepared with chicken, cheese, tortilla and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 750.0,
+    "promotional_price": null,
+    "ingredients": [
+      "chicken",
+      "cheese",
+      "tortilla",
+      "salsa"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "mild",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.2,
+    "order_count": 126
+  },
+  {
+    "id": "item57",
+    "restaurant_id": "res10",
+    "category_id": "cat_res10_3",
+    "name": "Vegetarian Nachos",
+    "description": "Vegetarian Nachos prepared with corn chips, cheese, beans and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 600.0,
+    "promotional_price": null,
+    "ingredients": [
+      "corn chips",
+      "cheese",
+      "beans",
+      "salsa"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "medium",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 3.8,
+    "order_count": 29
+  },
+  {
+    "id": "item58",
+    "restaurant_id": "res10",
+    "category_id": "cat_res10_4",
+    "name": "Burrito Bowl",
+    "description": "Burrito Bowl prepared with rice, beans, chicken and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 850.0,
+    "promotional_price": null,
+    "ingredients": [
+      "rice",
+      "beans",
+      "chicken",
+      "salsa"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "non_vegetarian"
+    ],
+    "spice_level": "medium",
+    "portion_size": "Family",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.1,
+    "order_count": 113
+  },
+  {
+    "id": "item59",
+    "restaurant_id": "res10",
+    "category_id": "cat_res10_5",
+    "name": "Guacamole & Chips",
+    "description": "Guacamole & Chips prepared with avocado, lime, corn chips and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 450.0,
+    "promotional_price": null,
+    "ingredients": [
+      "avocado",
+      "lime",
+      "corn chips"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegan",
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Large",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.2,
+    "order_count": 191
+  },
+  {
+    "id": "item60",
+    "restaurant_id": "res10",
+    "category_id": "cat_res10_1",
+    "name": "Churros",
+    "description": "Churros prepared with flour, sugar, cinnamon and served fresh.",
+    "image": "/static/images/food/default-food.png",
+    "price": 400.0,
+    "promotional_price": null,
+    "ingredients": [
+      "flour",
+      "sugar",
+      "cinnamon"
+    ],
+    "allergens": [],
+    "dietary_labels": [
+      "vegetarian"
+    ],
+    "spice_level": "none",
+    "portion_size": "Regular",
+    "add_ons": [],
+    "is_available": true,
+    "rating": 4.5,
+    "order_count": 170
+  }
+]

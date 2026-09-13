@@ -1,0 +1,39 @@
+{% extends "_base.html" %}
+{% block title %}Your cart — FoodFlow{% endblock %}
+{% block meta_description %}Review your order, apply a coupon, and proceed to checkout.{% endblock %}
+{% block body_attrs %}data-page="cart"{% endblock %}
+{% block content %}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h1 class="font-display text-3xl font-bold mb-6">Your cart</h1>
+
+  <div class="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-8">
+    <div>
+      <div id="cart-items-list" class="space-y-4"></div>
+      <a href="/restaurants" class="inline-flex items-center gap-1 text-sm text-primary font-semibold hover:underline mt-6">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg> Continue shopping
+      </a>
+    </div>
+
+    <aside class="lg:sticky lg:top-20 h-fit space-y-4">
+      <div class="card p-5">
+        <h2 class="font-display font-semibold mb-3">Have a coupon?</h2>
+        <form id="coupon-form" class="flex gap-2">
+          <label for="coupon-input" class="sr-only">Coupon code</label>
+          <input id="coupon-input" type="text" class="field-input" placeholder="e.g. WELCOME10" />
+          <button type="submit" id="coupon-apply-btn" class="btn btn-outline shrink-0">Apply</button>
+        </form>
+        <p id="coupon-feedback" class="field-help"></p>
+      </div>
+
+      <div class="card p-5">
+        <h2 class="font-display font-semibold mb-3">Order summary</h2>
+        <div id="cart-summary" class="space-y-2 hidden"></div>
+        <button type="button" id="proceed-to-checkout-btn" class="btn btn-primary w-full mt-4" disabled onclick="window.location.href='/checkout'">Proceed to checkout</button>
+      </div>
+    </aside>
+  </div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+<script src="/static/js/customer.js"></script>
+{% endblock %}

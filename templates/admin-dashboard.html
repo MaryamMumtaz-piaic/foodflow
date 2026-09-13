@@ -1,0 +1,70 @@
+{% extends "_dashboard_base.html" %}
+{% block title %}Admin dashboard — FoodFlow{% endblock %}
+{% block dash_role %}Administrator{% endblock %}
+{% block body_attrs %}data-page="admin-dashboard"{% endblock %}
+{% block sidebar_links %}
+<button type="button" class="dash-link is-active" data-dash-tab="overview"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg> Overview</button>
+<button type="button" class="dash-link" data-dash-tab="customers"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="4"/><path d="M2 21c0-4 3-6 7-6s7 2 7 6M16 3.5a4 4 0 0 1 0 7"/></svg> Customers</button>
+<button type="button" class="dash-link" data-dash-tab="restaurants"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18M3 11a9 9 0 0 1 18 0M3 11v2a9 9 0 0 0 18 0v-2"/></svg> Restaurants</button>
+<button type="button" class="dash-link" data-dash-tab="riders"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17 10 8h4l4 9M10 8h6"/></svg> Riders</button>
+<button type="button" class="dash-link" data-dash-tab="orders"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/></svg> Orders</button>
+<button type="button" class="dash-link" data-dash-tab="moderation"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a1.5 1.5 0 0 0 1.3 2.2h17.8a1.5 1.5 0 0 0 1.3-2.2L13.7 3.9a1.5 1.5 0 0 0-2.6 0Z"/></svg> Complaints &amp; risk</button>
+{% endblock %}
+{% block content %}
+<h1 class="font-display text-2xl font-bold mb-6">Admin dashboard</h1>
+
+<div data-dash-panel="overview">
+  <div id="admin-overview-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+</div>
+
+<div data-dash-panel="customers" class="hidden">
+  <h2 class="font-display font-semibold text-lg mb-4">Customers</h2>
+  <div id="customers-table"></div>
+</div>
+
+<div data-dash-panel="restaurants" class="hidden">
+  <h2 class="font-display font-semibold text-lg mb-4">Restaurant approvals &amp; management</h2>
+  <div id="restaurants-table"></div>
+</div>
+
+<div data-dash-panel="riders" class="hidden">
+  <h2 class="font-display font-semibold text-lg mb-4">Rider approvals &amp; management</h2>
+  <div id="riders-table"></div>
+</div>
+
+<div data-dash-panel="orders" class="hidden">
+  <h2 class="font-display font-semibold text-lg mb-4">All orders</h2>
+  <div class="flex flex-wrap gap-3 mb-4">
+    <div>
+      <label for="order-status-filter" class="sr-only">Filter by status</label>
+      <select id="order-status-filter" class="field-select !min-h-[38px] !py-1.5">
+        <option value="">All statuses</option>
+        <option value="pending">Pending</option><option value="accepted">Accepted</option>
+        <option value="preparing">Preparing</option><option value="out_for_delivery">Out for delivery</option>
+        <option value="delivered">Delivered</option><option value="cancelled">Cancelled</option>
+      </select>
+    </div>
+    <div class="flex-1 min-w-[200px]">
+      <label for="order-search-input" class="sr-only">Search by order number</label>
+      <input id="order-search-input" type="search" class="field-input !min-h-[38px] !py-1.5" placeholder="Search order #..." />
+    </div>
+  </div>
+  <div id="orders-table"></div>
+</div>
+
+<div data-dash-panel="moderation" class="hidden">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <section>
+      <h2 class="font-display font-semibold text-lg mb-4">Complaints</h2>
+      <div id="complaints-list" class="space-y-3"></div>
+    </section>
+    <section>
+      <h2 class="font-display font-semibold text-lg mb-4">Risk &amp; fraud alerts</h2>
+      <div id="risk-alerts-list" class="space-y-3"></div>
+    </section>
+  </div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+<script src="/static/js/admin.js"></script>
+{% endblock %}

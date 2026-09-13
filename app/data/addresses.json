@@ -1,0 +1,74 @@
+[
+  {
+    "id": "addr_u_cust1_1",
+    "user_id": "u_cust1",
+    "label": "Home",
+    "recipient_name": "Ayesha Khan",
+    "phone": "+923123209423",
+    "street_address": "House 16, Block 13",
+    "area": "Clifton",
+    "city": "Karachi",
+    "delivery_instructions": "Ring the doorbell twice.",
+    "is_default": true
+  },
+  {
+    "id": "addr_u_cust2_1",
+    "user_id": "u_cust2",
+    "label": "Home",
+    "recipient_name": "Bilal Ahmed",
+    "phone": "+923143374088",
+    "street_address": "House 50, Block 7",
+    "area": "F-7",
+    "city": "Lahore",
+    "delivery_instructions": "Ring the doorbell twice.",
+    "is_default": true
+  },
+  {
+    "id": "addr_u_cust3_1",
+    "user_id": "u_cust3",
+    "label": "Home",
+    "recipient_name": "Fatima Malik",
+    "phone": "+923128814949",
+    "street_address": "House 109, Block 6",
+    "area": "Clifton",
+    "city": "Lahore",
+    "delivery_instructions": "Ring the doorbell twice.",
+    "is_default": true
+  },
+  {
+    "id": "addr_u_cust4_1",
+    "user_id": "u_cust4",
+    "label": "Home",
+    "recipient_name": "Hassan Raza",
+    "phone": "+923143528453",
+    "street_address": "House 20, Block 15",
+    "area": "F-7",
+    "city": "Karachi",
+    "delivery_instructions": "Ring the doorbell twice.",
+    "is_default": true
+  },
+  {
+    "id": "addr_u_cust5_1",
+    "user_id": "u_cust5",
+    "label": "Home",
+    "recipient_name": "Sana Iqbal",
+    "phone": "+923116789850",
+    "street_address": "House 167, Block 18",
+    "area": "DHA",
+    "city": "Karachi",
+    "delivery_instructions": "Ring the doorbell twice.",
+    "is_default": true
+  },
+  {
+    "id": "addr_u_cust6_1",
+    "user_id": "u_cust6",
+    "label": "Home",
+    "recipient_name": "Omar Farooq",
+    "phone": "+923141726318",
+    "street_address": "House 43, Block 14",
+    "area": "Johar Town",
+    "city": "Lahore",
+    "delivery_instructions": "Ring the doorbell twice.",
+    "is_default": true
+  }
+]

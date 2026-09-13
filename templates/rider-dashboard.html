@@ -1,0 +1,55 @@
+{% extends "_dashboard_base.html" %}
+{% block title %}Rider dashboard — FoodFlow{% endblock %}
+{% block dash_role %}Delivery rider{% endblock %}
+{% block body_attrs %}data-page="rider-dashboard"{% endblock %}
+{% block sidebar_links %}
+<a href="#overview" class="dash-link is-active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg> Overview</a>
+<a href="#tasks" class="dash-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17 10 8h4l4 9M10 8h6"/></svg> Delivery tasks</a>
+<a href="#completed" class="dash-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 5 5L20 7"/></svg> Completed</a>
+{% endblock %}
+{% block content %}
+<div class="flex items-center justify-between flex-wrap gap-3 mb-6">
+  <h1 id="overview" class="font-display text-2xl font-bold">Rider dashboard</h1>
+  <label class="flex items-center gap-2 card px-4 py-2">
+    <span id="online-status-label" class="text-sm font-medium">Offline</span>
+    <input type="checkbox" id="online-toggle" class="w-5 h-5" aria-label="Toggle online status" />
+  </label>
+</div>
+
+<div id="rider-overview-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8"></div>
+
+<section id="tasks" class="mb-10">
+  <h2 class="font-display font-semibold text-lg mb-4">Your delivery tasks</h2>
+  <div id="delivery-tasks-list" class="space-y-4"></div>
+</section>
+
+<section id="completed">
+  <h2 class="font-display font-semibold text-lg mb-4">Completed deliveries</h2>
+  <div id="completed-deliveries-list" class="space-y-2"></div>
+</section>
+
+<div id="issue-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="issue-modal-title">
+  <div class="modal-panel p-6">
+    <div class="flex items-center justify-between mb-4">
+      <h2 id="issue-modal-title" class="font-display text-lg font-bold">Report a delivery issue</h2>
+      <button type="button" data-modal-close class="w-9 h-9 rounded-full hover:bg-primary-light flex items-center justify-center" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <form id="issue-form" class="space-y-4">
+      <div>
+        <label class="field-label" for="issue-type-select">Issue type</label>
+        <select id="issue-type-select" name="issue_type" class="field-select" required></select>
+      </div>
+      <div>
+        <label class="field-label" for="issue-description">Details</label>
+        <textarea id="issue-description" name="description" rows="3" class="field-textarea" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-full">Submit report</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+<script src="/static/js/rider.js"></script>
+{% endblock %}

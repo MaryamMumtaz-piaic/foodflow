@@ -1,0 +1,308 @@
+[
+  {
+    "id": "res1",
+    "name": "Karachi Grill House",
+    "description": "Karachi Grill House brings authentic pakistani, bbq flavors to your doorstep, made fresh daily with quality ingredients.",
+    "logo": "/static/images/restaurants/default-logo.png",
+    "cover_image": "/static/images/restaurants/default-cover.png",
+    "cuisine_types": [
+      "Pakistani",
+      "BBQ"
+    ],
+    "address": "Shahrah-e-Faisal, Karachi",
+    "city": "Karachi",
+    "rating": 4.5,
+    "review_count": 0,
+    "delivery_fee": 99.0,
+    "minimum_order": 800.0,
+    "estimated_delivery_time_minutes": 35,
+    "opening_hours": {
+      "open": "10:00",
+      "close": "23:30"
+    },
+    "is_open": true,
+    "availability_status": true,
+    "approval_status": "approved",
+    "owner_user_id": "u_owner_res1",
+    "phone": "+92214612365",
+    "email": "contact@res1.foodflow.pk",
+    "popular_dish": "Seekh Kabab Platter",
+    "price_range": "$$",
+    "created_at": "2026-05-24T16:18:44.257562"
+  },
+  {
+    "id": "res2",
+    "name": "Lahore Food Street",
+    "description": "Lahore Food Street brings authentic pakistani, desi flavors to your doorstep, made fresh daily with quality ingredients.",
+    "logo": "/static/images/restaurants/default-logo.png",
+    "cover_image": "/static/images/restaurants/default-cover.png",
+    "cuisine_types": [
+      "Pakistani",
+      "Desi"
+    ],
+    "address": "Gulberg, Lahore",
+    "city": "Lahore",
+    "rating": 3.7,
+    "review_count": 3,
+    "delivery_fee": 89.0,
+    "minimum_order": 600.0,
+    "estimated_delivery_time_minutes": 40,
+    "opening_hours": {
+      "open": "10:00",
+      "close": "23:30"
+    },
+    "is_open": true,
+    "availability_status": true,
+    "approval_status": "approved",
+    "owner_user_id": "u_owner_res2",
+    "phone": "+92212556017",
+    "email": "contact@res2.foodflow.pk",
+    "popular_dish": "Chicken Karahi",
+    "price_range": "$$",
+    "created_at": "2026-05-27T16:18:44.257583"
+  },
+  {
+    "id": "res3",
+    "name": "Bella Italia",
+    "description": "Bella Italia brings authentic italian flavors to your doorstep, made fresh daily with quality ingredients.",
+    "logo": "/static/images/restaurants/default-logo.png",
+    "cover_image": "/static/images/restaurants/default-cover.png",
+    "cuisine_types": [
+      "Italian"
+    ],
+    "address": "Clifton, Karachi",
+    "city": "Karachi",
+    "rating": 3.7,
+    "review_count": 3,
+    "delivery_fee": 129.0,
+    "minimum_order": 900.0,
+    "estimated_delivery_time_minutes": 45,
+    "opening_hours": {
+      "open": "10:00",
+      "close": "23:30"
+    },
+    "is_open": true,
+    "availability_status": true,
+    "approval_status": "approved",
+    "owner_user_id": "u_owner_res3",
+    "phone": "+92217022674",
+    "email": "contact@res3.foodflow.pk",
+    "popular_dish": "Margherita Pizza",
+    "price_range": "$$",
+    "created_at": "2025-09-09T16:18:44.257596"
+  },
+  {
+    "id": "res4",
+    "name": "Dragon Wok",
+    "description": "Dragon Wok brings authentic chinese flavors to your doorstep, made fresh daily with quality ingredients.",
+    "logo": "/static/images/restaurants/default-logo.png",
+    "cover_image": "/static/images/restaurants/default-cover.png",
+    "cuisine_types": [
+      "Chinese"
+    ],
+    "address": "DHA Phase 5, Karachi",
+    "city": "Karachi",
+    "rating": 5.0,
+    "review_count": 1,
+    "delivery_fee": 99.0,
+    "minimum_order": 700.0,
+    "estimated_delivery_time_minutes": 38,
+    "opening_hours": {
+      "open": "10:00",
+      "close": "23:30"
+    },
+    "is_open": true,
+    "availability_status": true,
+    "approval_status": "approved",
+    "owner_user_id": "u_owner_res4",
+    "phone": "+92215437923",
+    "email": "contact@res4.foodflow.pk",
+    "popular_dish": "Chicken Manchurian",
+    "price_range": "$",
+    "created_at": "2025-07-07T16:18:44.257607"
+  },
+  {
+    "id": "res5",
+    "name": "Burger Nation",
+    "description": "Burger Nation brings authentic fast food, american flavors to your doorstep, made fresh daily with quality ingredients.",
+    "logo": "/static/images/restaurants/default-logo.png",
+    "cover_image": "/static/images/restaurants/default-cover.png",
+    "cuisine_types": [
+      "Fast Food",
+      "American"
+    ],
+    "address": "North Nazimabad, Karachi",
+    "city": "Karachi",
+    "rating": 4.5,
+    "review_count": 4,
+    "delivery_fee": 79.0,
+    "minimum_order": 500.0,
+    "estimated_delivery_time_minutes": 25,
+    "opening_hours": {
+      "open": "10:00",
+      "close": "23:30"
+    },
+    "is_open": true,
+    "availability_status": true,
+    "approval_status": "approved",
+    "owner_user_id": "u_owner_res5",
+    "phone": "+92218707870",
+    "email": "contact@res5.foodflow.pk",
+    "popular_dish": "Zinger Burger Combo",
+    "price_range": "$$$",
+    "created_at": "2026-05-13T16:18:44.257617"
+  },
+  {
+    "id": "res6",
+    "name": "Spice Route",
+    "description": "Spice Route brings authentic indian, pakistani flavors to your doorstep, made fresh daily with quality ingredients.",
+    "logo": "/static/images/restaurants/default-logo.png",
+    "cover_image": "/static/images/restaurants/default-cover.png",
+    "cuisine_types": [
+      "Indian",
+      "Pakistani"
+    ],
+    "address": "Johar Town, Lahore",
+    "city": "Lahore",
+    "rating": 3.5,
+    "review_count": 2,
+    "delivery_fee": 109.0,
+    "minimum_order": 700.0,
+    "estimated_delivery_time_minutes": 42,
+    "opening_hours": {
+      "open": "10:00",
+      "close": "23:30"
+    },
+    "is_open": true,
+    "availability_status": true,
+    "approval_status": "approved",
+    "owner_user_id": "u_owner_res6",
+    "phone": "+92217350753",
+    "email": "contact@res6.foodflow.pk",
+    "popular_dish": "Butter Chicken",
+    "price_range": "$",
+    "created_at": "2025-10-06T16:18:44.257627"
+  },
+  {
+    "id": "res7",
+    "name": "Sushi Zen",
+    "description": "Sushi Zen brings authentic japanese flavors to your doorstep, made fresh daily with quality ingredients.",
+    "logo": "/static/images/restaurants/default-logo.png",
+    "cover_image": "/static/images/restaurants/default-cover.png",
+    "cuisine_types": [
+      "Japanese"
+    ],
+    "address": "Bahria Town, Islamabad",
+    "city": "Islamabad",
+    "rating": 2.7,
+    "review_count": 6,
+    "delivery_fee": 149.0,
+    "minimum_order": 1200.0,
+    "estimated_delivery_time_minutes": 50,
+    "opening_hours": {
+      "open": "10:00",
+      "close": "23:30"
+    },
+    "is_open": true,
+    "availability_status": true,
+    "approval_status": "approved",
+    "owner_user_id": "u_owner_res7",
+    "phone": "+92215918715",
+    "email": "contact@res7.foodflow.pk",
+    "popular_dish": "Salmon Sushi Platter",
+    "price_range": "$$$",
+    "created_at": "2025-09-02T16:18:44.257636"
+  },
+  {
+    "id": "res8",
+    "name": "Green Bowl Vegan Kitchen",
+    "description": "Green Bowl Vegan Kitchen brings authentic vegan, continental flavors to your doorstep, made fresh daily with quality ingredients.",
+    "logo": "/static/images/restaurants/default-logo.png",
+    "cover_image": "/static/images/restaurants/default-cover.png",
+    "cuisine_types": [
+      "Vegan",
+      "Continental"
+    ],
+    "address": "F-7 Markaz, Islamabad",
+    "city": "Islamabad",
+    "rating": 1.0,
+    "review_count": 1,
+    "delivery_fee": 99.0,
+    "minimum_order": 650.0,
+    "estimated_delivery_time_minutes": 35,
+    "opening_hours": {
+      "open": "10:00",
+      "close": "23:30"
+    },
+    "is_open": false,
+    "availability_status": true,
+    "approval_status": "approved",
+    "owner_user_id": "u_owner_res8",
+    "phone": "+92217067228",
+    "email": "contact@res8.foodflow.pk",
+    "popular_dish": "Buddha Bowl",
+    "price_range": "$$$",
+    "created_at": "2026-04-08T16:18:44.257645"
+  },
+  {
+    "id": "res9",
+    "name": "Al-Madina Biryani House",
+    "description": "Al-Madina Biryani House brings authentic pakistani, biryani flavors to your doorstep, made fresh daily with quality ingredients.",
+    "logo": "/static/images/restaurants/default-logo.png",
+    "cover_image": "/static/images/restaurants/default-cover.png",
+    "cuisine_types": [
+      "Pakistani",
+      "Biryani"
+    ],
+    "address": "Saddar, Karachi",
+    "city": "Karachi",
+    "rating": 4.0,
+    "review_count": 1,
+    "delivery_fee": 69.0,
+    "minimum_order": 400.0,
+    "estimated_delivery_time_minutes": 30,
+    "opening_hours": {
+      "open": "10:00",
+      "close": "23:30"
+    },
+    "is_open": true,
+    "availability_status": true,
+    "approval_status": "approved",
+    "owner_user_id": "u_owner_res9",
+    "phone": "+92212166941",
+    "email": "contact@res9.foodflow.pk",
+    "popular_dish": "Chicken Biryani",
+    "price_range": "$",
+    "created_at": "2025-08-11T16:18:44.257654"
+  },
+  {
+    "id": "res10",
+    "name": "Taco Fiesta",
+    "description": "Taco Fiesta brings authentic mexican flavors to your doorstep, made fresh daily with quality ingredients.",
+    "logo": "/static/images/restaurants/default-logo.png",
+    "cover_image": "/static/images/restaurants/default-cover.png",
+    "cuisine_types": [
+      "Mexican"
+    ],
+    "address": "MM Alam Road, Lahore",
+    "city": "Lahore",
+    "rating": 4.3,
+    "review_count": 0,
+    "delivery_fee": 99.0,
+    "minimum_order": 600.0,
+    "estimated_delivery_time_minutes": 33,
+    "opening_hours": {
+      "open": "10:00",
+      "close": "23:30"
+    },
+    "is_open": true,
+    "availability_status": true,
+    "approval_status": "pending",
+    "owner_user_id": "u_owner_res10",
+    "phone": "+92214823498",
+    "email": "contact@res10.foodflow.pk",
+    "popular_dish": "Beef Tacos",
+    "price_range": "$$",
+    "created_at": "2026-06-05T16:18:44.257664"
+  }
+]

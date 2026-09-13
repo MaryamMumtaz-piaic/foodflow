@@ -1,0 +1,86 @@
+{% extends "_base.html" %}
+{% block title %}My profile — FoodFlow{% endblock %}
+{% block meta_description %}Manage your FoodFlow account, addresses, favorites, and preferences.{% endblock %}
+{% block body_attrs %}data-page="profile"{% endblock %}
+{% block content %}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h1 class="font-display text-3xl font-bold mb-6">My profile</h1>
+  <div id="profile-root">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <section class="card p-5">
+        <h2 class="font-display font-semibold mb-4">Personal information</h2>
+        <form id="profile-form" class="space-y-4">
+          <div>
+            <label class="field-label" for="profile-name">Full name</label>
+            <input id="profile-name" name="name" type="text" class="field-input" />
+          </div>
+          <div>
+            <label class="field-label" for="profile-email">Email</label>
+            <input id="profile-email" name="email" type="email" class="field-input" />
+          </div>
+          <div>
+            <label class="field-label" for="profile-phone">Phone</label>
+            <input id="profile-phone" name="phone" type="tel" class="field-input" />
+          </div>
+          <button type="submit" class="btn btn-primary">Save changes</button>
+        </form>
+      </section>
+
+      <section class="card p-5">
+        <h2 class="font-display font-semibold mb-4">Saved addresses</h2>
+        <div id="addresses-list" class="space-y-3"></div>
+      </section>
+
+      <section class="card p-5">
+        <h2 class="font-display font-semibold mb-4">Favorite restaurants</h2>
+        <ul id="favorite-restaurants" class="space-y-2"></ul>
+      </section>
+
+      <section class="card p-5">
+        <h2 class="font-display font-semibold mb-4">Favorite meals</h2>
+        <ul id="favorite-meals" class="space-y-2"></ul>
+      </section>
+
+      <section class="card p-5">
+        <h2 class="font-display font-semibold mb-4">Payment &amp; notification preferences</h2>
+        <form id="preferences-form" class="space-y-3">
+          <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="order_updates" class="w-4 h-4" /> Send me order status updates</label>
+          <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="promotions" class="w-4 h-4" /> Send me promotions &amp; offers</label>
+          <div>
+            <label class="field-label" for="default-payment">Default payment method</label>
+            <select id="default-payment" name="default_payment_method" class="field-select">
+              <option value="cash_on_delivery">Cash on delivery</option>
+              <option value="card">Simulated card</option>
+              <option value="wallet">Simulated wallet</option>
+            </select>
+          </div>
+          <p class="field-help">Preferences save automatically to this device.</p>
+        </form>
+      </section>
+
+      <section class="card p-5 lg:col-span-2">
+        <h2 class="font-display font-semibold mb-2">Order history</h2>
+        <p class="text-sm text-ink-soft mb-3">See your full order history and reorder favorites.</p>
+        <a href="/order-history" class="btn btn-outline">View order history</a>
+      </section>
+
+      <section class="card p-5 lg:col-span-2">
+        <h2 class="font-display font-semibold mb-2">Account settings</h2>
+        <button type="button" id="logout-account-btn" class="btn btn-danger">Log out</button>
+      </section>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+<script src="/static/js/customer.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('logout-account-btn')?.addEventListener('click', async function () {
+      await FoodFlowAuth.logout();
+      window.location.reload();
+    });
+  });
+</script>
+{% endblock %}

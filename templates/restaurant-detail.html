@@ -1,0 +1,56 @@
+{% extends "_base.html" %}
+{% block title %}Restaurant — FoodFlow{% endblock %}
+{% block meta_description %}View the menu, ratings, offers, and reviews for this restaurant on FoodFlow.{% endblock %}
+{% block body_attrs %}data-page="restaurant-detail"{% endblock %}
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div id="rd-header-skeleton">
+    <div class="skeleton h-56 sm:h-72 w-full"></div>
+    <div class="skeleton h-8 w-1/2 mt-4"></div>
+  </div>
+  <div id="rd-header" class="hidden"></div>
+
+  <div id="restaurant-detail-root" class="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 mt-8">
+    <div>
+      <div class="mb-6">
+        <label for="menu-search" class="sr-only">Search within menu</label>
+        <div class="relative max-w-sm">
+          <svg class="absolute left-3 top-1/2 -translate-y-1/2 text-ink-soft" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="menu-search" type="search" placeholder="Search this menu..." class="field-input !pl-9" />
+        </div>
+      </div>
+
+      <div id="menu-list"></div>
+
+      <section id="reviews" class="mt-10">
+        <h2 class="font-display text-xl font-bold mb-4">Reviews</h2>
+        <div id="reviews-list" class="space-y-3"></div>
+      </section>
+    </div>
+
+    <aside aria-label="Cart summary" class="lg:sticky lg:top-20 h-fit">
+      <div class="card p-4">
+        <h2 class="font-display font-semibold mb-3">Your order</h2>
+        <p id="rd-cart-summary" class="text-sm text-ink-soft">Add items from the menu to see your order summary.</p>
+        <a href="/cart" class="btn btn-primary w-full mt-4">View cart</a>
+      </div>
+    </aside>
+  </div>
+</div>
+{% include "_food_modal.html" %}
+{% endblock %}
+{% block extra_scripts %}
+<script src="/static/js/customer.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function updateSummary() {
+      var el = document.getElementById('rd-cart-summary');
+      if (!el || !window.FoodFlowCart) return;
+      var cart = FoodFlowCart.readCart();
+      el.textContent = cart.items.length ? cart.items.length + ' item(s) — Rs. ' + FoodFlowCart.subtotal().toLocaleString() : 'Add items from the menu to see your order summary.';
+    }
+    updateSummary();
+    if (window.FoodFlowCart) FoodFlowCart.onChange(updateSummary);
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends "_base.html" %}
+{% block title %}Checkout — FoodFlow{% endblock %}
+{% block meta_description %}Confirm your delivery address, payment method, and place your order.{% endblock %}
+{% block body_attrs %}data-page="checkout"{% endblock %}
+{% block content %}
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h1 class="font-display text-3xl font-bold mb-6">Checkout</h1>
+
+  <div id="checkout-empty-notice" class="hidden card p-8 text-center">
+    <p class="font-display font-semibold text-lg mb-2">Your cart is empty</p>
+    <p class="text-ink-soft mb-4">Add a few items before checking out.</p>
+    <a href="/restaurants" class="btn btn-primary">Browse restaurants</a>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-8">
+    <form id="checkout-form" class="space-y-6" novalidate>
+      <div id="checkout-error-banner" class="hidden badge badge-danger !text-sm !py-2 !px-3 w-full" role="alert"></div>
+
+      <fieldset class="card p-5">
+        <legend class="font-display font-semibold px-1">Delivery address</legend>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-3">
+          <div>
+            <label class="field-label" for="recipient_name">Recipient name</label>
+            <input id="recipient_name" name="recipient_name" type="text" required class="field-input" />
+            <p class="field-error" data-error-for="recipient_name"></p>
+          </div>
+          <div>
+            <label class="field-label" for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" required class="field-input" autocomplete="tel" />
+            <p class="field-error" data-error-for="phone"></p>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="field-label" for="street_address">Street address</label>
+            <input id="street_address" name="street_address" type="text" required class="field-input" />
+            <p class="field-error" data-error-for="street_address"></p>
+          </div>
+          <div>
+            <label class="field-label" for="area">Area</label>
+            <input id="area" name="area" type="text" required class="field-input" />
+            <p class="field-error" data-error-for="area"></p>
+          </div>
+          <div>
+            <label class="field-label" for="city">City</label>
+            <input id="city" name="city" type="text" required class="field-input" />
+            <p class="field-error" data-error-for="city"></p>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="field-label" for="delivery_instructions">Delivery instructions (optional)</label>
+            <textarea id="delivery_instructions" name="delivery_instructions" rows="2" class="field-textarea" placeholder="e.g. gate code, floor, landmark"></textarea>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="card p-5">
+        <legend class="font-display font-semibold px-1">Payment method</legend>
+        <div class="space-y-2 mt-3">
+          <label class="flex items-center gap-2 text-sm p-3 border border-border rounded-lg cursor-pointer has-[:checked]:border-primary">
+            <input type="radio" name="payment_method" value="cash_on_delivery" checked class="w-4 h-4" /> Cash on delivery
+          </label>
+          <label class="flex items-center gap-2 text-sm p-3 border border-border rounded-lg cursor-pointer has-[:checked]:border-primary">
+            <input type="radio" name="payment_method" value="card" class="w-4 h-4" /> Simulated card payment
+          </label>
+          <label class="flex items-center gap-2 text-sm p-3 border border-border rounded-lg cursor-pointer has-[:checked]:border-primary">
+            <input type="radio" name="payment_method" value="wallet" class="w-4 h-4" /> Simulated wallet payment
+          </label>
+        </div>
+        <p class="field-help mt-2">This is a portfolio project — no real payment is processed and no card details are collected.</p>
+      </fieldset>
+
+      <button type="submit" id="place-order-btn" class="btn btn-primary w-full">Confirm order</button>
+    </form>
+
+    <aside class="lg:sticky lg:top-20 h-fit">
+      <div class="card p-5">
+        <h2 class="font-display font-semibold mb-3">Order summary</h2>
+        <div id="checkout-order-summary" class="space-y-1"></div>
+      </div>
+    </aside>
+  </div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+<script src="/static/js/customer.js"></script>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "_base.html" %}
+{% block title %}Track your order — FoodFlow{% endblock %}
+{% block meta_description %}Follow your order from confirmation to delivery in real time.{% endblock %}
+{% block body_attrs %}data-page="order-tracking"{% endblock %}
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <div class="flex items-center justify-between flex-wrap gap-3 mb-6">
+    <h1 class="font-display text-3xl font-bold">Track your order</h1>
+    <button type="button" id="cancel-order-btn" class="btn btn-outline hidden !border-danger !text-danger">Cancel order</button>
+  </div>
+
+  <div id="order-tracking-root">
+    <div id="status-stepper" class="card p-4"></div>
+    <div id="tracking-details" class="mt-6"></div>
+  </div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+<script src="/static/js/customer.js"></script>
+{% endblock %}

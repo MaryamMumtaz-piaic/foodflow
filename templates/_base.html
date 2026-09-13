@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{% block title %}FoodFlow — Food delivery, done right{% endblock %}</title>
+<meta name="description" content="{% block meta_description %}Order from your favorite restaurants with AI-powered search, live tracking, and fast delivery.{% endblock %}" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: { DEFAULT: '#ea580c', dark: '#c2410c', light: '#fff1e6' },
+          accent: { DEFAULT: '#0d9488', dark: '#0f766e' },
+          ink: { DEFAULT: '#1c1917', soft: '#57534e' },
+          surface: '#fffaf3',
+          border: '#f0e4d4',
+          success: '#15803d',
+          warning: '#b45309',
+          danger: '#b91c1c',
+          info: '#0369a1'
+        },
+        fontFamily: {
+          display: ['Poppins', 'sans-serif'],
+          body: ['Inter', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+<link rel="stylesheet" href="/static/css/styles.css" />
+{% block extra_head %}{% endblock %}
+</head>
+<body class="font-body bg-surface text-ink antialiased" {% block body_attrs %}{% endblock %}>
+<a href="#main-content" class="sr-only-focusable fixed top-2 left-2 z-[999] bg-primary text-white px-4 py-2 rounded-lg">Skip to main content</a>
+
+{% include "_navbar.html" %}
+
+<main id="main-content" tabindex="-1">
+{% block content %}{% endblock %}
+</main>
+
+{% include "_footer.html" %}
+
+<div id="toast-region" aria-live="polite" aria-atomic="true"></div>
+
+<script src="/static/js/api.js"></script>
+<script src="/static/js/auth.js"></script>
+<script src="/static/js/cart.js"></script>
+<script src="/static/js/app.js"></script>
+{% block extra_scripts %}{% endblock %}
+</body>
+</html>

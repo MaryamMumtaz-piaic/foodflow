@@ -1,0 +1,92 @@
+{% extends "_base.html" %}
+{% block title %}Restaurants — FoodFlow{% endblock %}
+{% block meta_description %}Browse and filter every restaurant on FoodFlow by cuisine, price, rating, and delivery time.{% endblock %}
+{% block body_attrs %}data-page="restaurants"{% endblock %}
+{% block content %}
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h1 class="font-display text-3xl font-bold mb-6">Restaurants near you</h1>
+
+  <div class="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-8">
+    <aside aria-label="Filter restaurants">
+      <form id="filter-form" class="card p-4 space-y-5 lg:sticky lg:top-20">
+        <div>
+          <label class="field-label" for="filter-q">Search</label>
+          <input id="filter-q" name="q" type="search" class="field-input" placeholder="Restaurant or dish" />
+        </div>
+
+        <fieldset>
+          <legend class="field-label">Cuisine</legend>
+          <div class="space-y-1.5 text-sm">
+            {% for c in ['Pizza','Burgers','Biryani','Desi','Chinese','Fast Food','Desserts'] %}
+            <label class="flex items-center gap-2"><input type="checkbox" name="cuisine" value="{{ c|lower }}" class="w-4 h-4" /> {{ c }}</label>
+            {% endfor %}
+          </div>
+        </fieldset>
+
+        <div>
+          <label class="field-label" for="filter-price">Price range</label>
+          <select id="filter-price" name="price_range" class="field-select">
+            <option value="">Any price</option>
+            <option value="low">Rs. — budget-friendly</option>
+            <option value="mid">Rs. Rs. — moderate</option>
+            <option value="high">Rs. Rs. Rs. — premium</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="field-label" for="filter-rating">Minimum rating</label>
+          <select id="filter-rating" name="min_rating" class="field-select">
+            <option value="">Any rating</option>
+            <option value="4.5">4.5+</option>
+            <option value="4">4.0+</option>
+            <option value="3.5">3.5+</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="field-label" for="filter-delivery-time">Delivery time</label>
+          <select id="filter-delivery-time" name="max_delivery_time" class="field-select">
+            <option value="">Any time</option>
+            <option value="20">Under 20 min</option>
+            <option value="30">Under 30 min</option>
+            <option value="45">Under 45 min</option>
+          </select>
+        </div>
+
+        <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="open_now" value="true" class="w-4 h-4" /> Open now only</label>
+
+        <div class="flex gap-2 pt-2">
+          <button type="submit" class="btn btn-primary flex-1">Apply</button>
+          <button type="button" id="clear-filters-btn" class="btn btn-outline">Clear</button>
+        </div>
+      </form>
+    </aside>
+
+    <div>
+      <div class="flex items-center justify-between mb-4 gap-3">
+        <p class="text-sm text-ink-soft" id="results-count-label">Showing restaurants</p>
+        <div class="flex items-center gap-2">
+          <label for="sort-select" class="text-sm font-medium">Sort by</label>
+          <select id="sort-select" class="field-select !min-h-[38px] !py-1.5">
+            <option value="recommended">Recommended</option>
+            <option value="rating">Highest rated</option>
+            <option value="delivery_time">Fastest delivery</option>
+            <option value="price_low">Price: low to high</option>
+            <option value="price_high">Price: high to low</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="restaurant-grid"></div>
+
+      <div class="text-center mt-8">
+        <button type="button" id="load-more-btn" class="btn btn-outline hidden">Load more restaurants</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% include "_food_modal.html" %}
+{% endblock %}
+{% block extra_scripts %}
+<script src="/static/js/customer.js"></script>
+{% endblock %}

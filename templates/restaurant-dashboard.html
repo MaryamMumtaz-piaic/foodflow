@@ -1,0 +1,80 @@
+{% extends "_dashboard_base.html" %}
+{% block title %}Restaurant dashboard — FoodFlow{% endblock %}
+{% block dash_role %}Restaurant manager{% endblock %}
+{% block body_attrs %}data-page="restaurant-dashboard"{% endblock %}
+{% block sidebar_links %}
+<button type="button" class="dash-link is-active" data-dash-tab="overview"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"/><rect x="14" y="3" width="7" height="5"/><rect x="14" y="12" width="7" height="9"/><rect x="3" y="16" width="7" height="5"/></svg> Overview</button>
+<button type="button" class="dash-link" data-dash-tab="profile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg> Restaurant profile</button>
+<button type="button" class="dash-link" data-dash-tab="menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h7"/></svg> Menu management</button>
+<button type="button" class="dash-link" data-dash-tab="orders"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg> Orders</button>
+{% endblock %}
+{% block content %}
+<h1 class="font-display text-2xl font-bold mb-6">Restaurant dashboard</h1>
+
+<div data-dash-panel="overview">
+  <div id="restaurant-overview-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8"></div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <section class="card p-5">
+      <h2 class="font-display font-semibold mb-3">AI business insights</h2>
+      <div id="ai-insights-panel"></div>
+    </section>
+    <section class="card p-5">
+      <h2 class="font-display font-semibold mb-3">Popular menu items</h2>
+      <div id="popular-items-panel"></div>
+    </section>
+  </div>
+</div>
+
+<div data-dash-panel="profile" class="hidden">
+  <section class="card p-5 max-w-2xl">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="font-display font-semibold">Restaurant profile</h2>
+      <label class="flex items-center gap-2 text-sm"><input type="checkbox" id="availability-toggle" class="w-4 h-4" /> Currently accepting orders</label>
+    </div>
+    <form id="restaurant-profile-form" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="sm:col-span-2"><label class="field-label" for="rp-name">Restaurant name</label><input id="rp-name" name="name" type="text" class="field-input" /></div>
+      <div class="sm:col-span-2"><label class="field-label" for="rp-description">Description</label><textarea id="rp-description" name="description" rows="3" class="field-textarea"></textarea></div>
+      <div><label class="field-label" for="rp-address">Address</label><input id="rp-address" name="address" type="text" class="field-input" /></div>
+      <div><label class="field-label" for="rp-contact">Contact number</label><input id="rp-contact" name="contact" type="tel" class="field-input" /></div>
+      <div><label class="field-label" for="rp-opening">Opening hours</label><input id="rp-opening" name="opening_hours" type="text" placeholder="e.g. 11:00 - 23:00" class="field-input" /></div>
+      <div><label class="field-label" for="rp-delivery-fee">Delivery fee (Rs.)</label><input id="rp-delivery-fee" name="delivery_fee" type="number" min="0" class="field-input" /></div>
+      <div><label class="field-label" for="rp-min-order">Minimum order (Rs.)</label><input id="rp-min-order" name="minimum_order" type="number" min="0" class="field-input" /></div>
+      <div class="sm:col-span-2"><button type="submit" class="btn btn-primary">Save profile</button></div>
+    </form>
+  </section>
+</div>
+
+<div data-dash-panel="menu" class="hidden">
+  <section class="card p-5 mb-6">
+    <h2 id="menu-item-form-title" class="font-display font-semibold mb-4">Add menu item</h2>
+    <form id="menu-item-form" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div><label class="field-label" for="mi-name">Name</label><input id="mi-name" name="name" type="text" required class="field-input" /></div>
+      <div><label class="field-label" for="mi-price">Price (Rs.)</label><input id="mi-price" name="price" type="number" min="0" step="0.01" required class="field-input" /></div>
+      <div class="sm:col-span-2"><label class="field-label" for="mi-description">Description</label><textarea id="mi-description" name="description" rows="2" class="field-textarea"></textarea></div>
+      <div><label class="field-label" for="mi-category">Category ID</label><input id="mi-category" name="category_id" type="text" class="field-input" /></div>
+      <div><label class="field-label" for="mi-spice">Spice level</label>
+        <select id="mi-spice" name="spice_level" class="field-select">
+          <option value="none">None</option><option value="mild">Mild</option><option value="medium">Medium</option><option value="hot">Hot</option>
+        </select>
+      </div>
+      <div><label class="field-label" for="mi-portion">Portion size</label><input id="mi-portion" name="portion_size" type="text" placeholder="e.g. Serves 1" class="field-input" /></div>
+      <div><label class="field-label" for="mi-image">Image URL</label><input id="mi-image" name="image" type="url" class="field-input" /></div>
+      <div><label class="field-label" for="mi-ingredients">Ingredients (comma-separated)</label><input id="mi-ingredients" name="ingredients" type="text" class="field-input" /></div>
+      <div><label class="field-label" for="mi-allergens">Allergens (comma-separated)</label><input id="mi-allergens" name="allergens" type="text" class="field-input" /></div>
+      <div class="sm:col-span-2"><button type="submit" class="btn btn-primary">Save menu item</button></div>
+    </form>
+  </section>
+  <section>
+    <h2 class="font-display font-semibold mb-3">Your menu</h2>
+    <div id="menu-management-list"></div>
+  </section>
+</div>
+
+<div data-dash-panel="orders" class="hidden">
+  <h2 class="font-display font-semibold mb-4">Incoming orders</h2>
+  <div id="incoming-orders-list" class="space-y-4"></div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+<script src="/static/js/restaurant.js"></script>
+{% endblock %}

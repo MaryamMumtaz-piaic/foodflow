@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+{% block title %}Order confirmed — FoodFlow{% endblock %}
+{% block meta_description %}Your FoodFlow order has been placed successfully.{% endblock %}
+{% block body_attrs %}data-page="order-confirmation"{% endblock %}
+{% block content %}
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div id="order-confirmation-root"></div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+<script src="/static/js/customer.js"></script>
+{% endblock %}

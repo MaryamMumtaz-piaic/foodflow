@@ -1,0 +1,50 @@
+{% extends "_base.html" %}
+{% block title %}Support — FoodFlow{% endblock %}
+{% block meta_description %}Get help with orders, refunds, cancellations, and delivery delays from FoodFlow's AI support assistant.{% endblock %}
+{% block body_attrs %}data-page="support"{% endblock %}
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h1 class="font-display text-3xl font-bold mb-2">How can we help?</h1>
+  <p id="support-order-context" class="text-ink-soft mb-6"></p>
+
+  <div class="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
+    <div class="card p-4 flex flex-col h-[520px]">
+      <div id="support-chat-log" class="flex-1 overflow-y-auto space-y-3 p-2" role="log" aria-live="polite" aria-label="Support chat"></div>
+      <form id="support-chat-form" class="flex gap-2 mt-3 pt-3 border-t border-border">
+        <label for="support-chat-input" class="sr-only">Type your question</label>
+        <input id="support-chat-input" type="text" class="field-input" placeholder="Ask about your order, a refund, or a delay..." />
+        <button type="submit" class="btn btn-primary shrink-0">Send</button>
+      </form>
+      <p class="field-help mt-2">Our AI assistant can explain order status, refund policy, and cancellations — it will never confirm a refund or cancellation was completed unless our systems confirm it.</p>
+    </div>
+
+    <aside class="space-y-4">
+      <div class="card p-4">
+        <h2 class="font-display font-semibold mb-3">Common questions</h2>
+        <div class="flex flex-col gap-2">
+          <button type="button" class="faq-question-btn btn btn-outline !justify-start text-left">Where is my order?</button>
+          <button type="button" class="faq-question-btn btn btn-outline !justify-start text-left">How do refunds work?</button>
+          <button type="button" class="faq-question-btn btn btn-outline !justify-start text-left">Can I cancel my order?</button>
+          <button type="button" class="faq-question-btn btn btn-outline !justify-start text-left">My order is late, what now?</button>
+        </div>
+      </div>
+      <div class="card p-4">
+        <h2 class="font-display font-semibold mb-2">Still stuck?</h2>
+        <p class="text-sm text-ink-soft mb-3">If the AI assistant can't resolve it, escalate to a human agent.</p>
+        <button type="button" id="escalate-btn" class="btn btn-secondary w-full">Talk to a human agent</button>
+      </div>
+    </aside>
+  </div>
+</div>
+{% endblock %}
+{% block extra_scripts %}
+<script src="/static/js/customer.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var log = document.getElementById('support-chat-log');
+    if (log) {
+      log.insertAdjacentHTML('beforeend', '<div class="max-w-[80%] px-4 py-2.5 rounded-2xl text-sm bg-white border border-border">Hi! I\'m the FoodFlow support assistant. Ask me about an order, refund, or delivery delay.</div>');
+    }
+  });
+</script>
+{% endblock %}
