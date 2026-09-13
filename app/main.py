@@ -70,14 +70,14 @@ def page_restaurants(request: Request):
     return _render(request, "restaurants.html")
 
 
-@app.get("/restaurants/{restaurant_id}")
-def page_restaurant_detail(request: Request, restaurant_id: str):
-    return _render(request, "restaurant-detail.html", restaurant_id=restaurant_id)
+@app.get("/restaurant-detail")
+def page_restaurant_detail(request: Request):
+    return _render(request, "restaurant-detail.html")
 
 
-@app.get("/food/{item_id}")
-def page_food_detail(request: Request, item_id: str):
-    return _render(request, "food-detail.html", item_id=item_id)
+@app.get("/food-detail")
+def page_food_detail(request: Request):
+    return _render(request, "food-detail.html")
 
 
 @app.get("/cart")
@@ -90,9 +90,24 @@ def page_checkout(request: Request):
     return _render(request, "checkout.html")
 
 
-@app.get("/track/{order_id}")
-def page_track(request: Request, order_id: str):
-    return _render(request, "order-tracking.html", order_id=order_id)
+@app.get("/order-tracking")
+def page_order_tracking(request: Request):
+    return _render(request, "order-tracking.html")
+
+
+@app.get("/order-confirmation")
+def page_order_confirmation(request: Request):
+    return _render(request, "order-confirmation.html")
+
+
+@app.get("/order-history")
+def page_order_history(request: Request):
+    return _render(request, "order-history.html")
+
+
+@app.get("/support")
+def page_support(request: Request):
+    return _render(request, "support.html")
 
 
 @app.get("/profile")
