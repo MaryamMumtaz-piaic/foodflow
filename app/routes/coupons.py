@@ -26,8 +26,17 @@ def validate_coupon(payload: CouponValidateRequest, user: dict = Depends(require
     return CouponValidateResponse(valid=True, discount_amount=discount, coupon_code=coupon["code"])
 
 
+def _assert_owns_coupon(user: dict, coupon: dict):
+    if user["role"] == "admin":
+        return
+    if user["role"] != "restaurant" or coupon.get("restaurant_id") != user.get("restaurant_id"):
+        raise HTTPException(status_code=403, detail="You do not manage this coupon.")
+
+
 @router.post("", status_code=201)
 def create_coupon(payload: CouponCreate, user: dict = Depends(require_role("admin", "restaurant"))):
+    if user["role"] == "restaurant" and payload.restaurant_id != user.get("restaurant_id"):
+        raise HTTPException(status_code=403, detail="You can only create coupons for your own restaurant.")
     if coupon_service.get_coupon_by_code(payload.code):
         raise HTTPException(status_code=400, detail="A coupon with this code already exists.")
     record = payload.model_dump()
@@ -40,14 +49,19 @@ def create_coupon(payload: CouponCreate, user: dict = Depends(require_role("admi
 
 @router.put("/{coupon_id}")
 def update_coupon(coupon_id: str, payload: CouponUpdate, user: dict = Depends(require_role("admin", "restaurant"))):
-    if not coupons_store.get(coupon_id):
+    coupon = coupons_store.get(coupon_id)
+    if not coupon:
         raise HTTPException(status_code=404, detail="Coupon not found.")
+    _assert_owns_coupon(user, coupon)
     patch = {k: v for k, v in payload.model_dump(exclude_unset=True).items() if v is not None}
     return coupons_store.update(coupon_id, patch)
 
 
 @router.delete("/{coupon_id}")
 def delete_coupon(coupon_id: str, user: dict = Depends(require_role("admin", "restaurant"))):
-    if not coupons_store.delete(coupon_id):
+    coupon = coupons_store.get(coupon_id)
+    if not coupon:
         raise HTTPException(status_code=404, detail="Coupon not found.")
+    _assert_owns_coupon(user, coupon)
+    coupons_store.delete(coupon_id)
     return {"message": "Coupon deleted."}

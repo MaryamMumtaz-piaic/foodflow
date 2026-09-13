@@ -9,6 +9,8 @@ router = APIRouter(prefix="/api/auth", tags=["auth"])
 
 @router.post("/register", response_model=AuthResponse, status_code=status.HTTP_201_CREATED)
 def register(payload: RegisterRequest):
+    if payload.role == "admin":
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Admin accounts cannot be self-registered.")
     try:
         user = auth_service.register_user(payload.name, payload.email, payload.password, payload.role, payload.phone)
     except auth_service.AuthError as e:

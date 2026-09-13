@@ -44,7 +44,11 @@ def update_review(review_id: str, payload: ReviewUpdate, user: dict = Depends(ge
     review = reviews_store.get(review_id)
     if not review:
         raise HTTPException(status_code=404, detail="Review not found.")
-    if user["role"] == "customer" and review["customer_id"] != user["id"]:
+    if user["role"] == "admin":
+        pass
+    elif user["role"] == "customer" and review["customer_id"] == user["id"]:
+        pass
+    else:
         raise HTTPException(status_code=403, detail="You can only edit your own review.")
     patch = {}
     if payload.rating is not None:
