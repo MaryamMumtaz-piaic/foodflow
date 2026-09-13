@@ -42,8 +42,8 @@ def create_restaurant(payload: RestaurantCreate, user: dict = Depends(require_ro
     record["id"] = new_id("res_")
     record["name"] = sanitize_text(record["name"])
     record["description"] = sanitize_text(record.get("description", ""))
-    record.setdefault("logo", "/static/images/restaurants/default-logo.png")
-    record.setdefault("cover_image", "/static/images/restaurants/default-cover.png")
+    record["logo"] = record.get("logo") or ("https://picsum.photos/seed/" + record["id"] + "-logo/200/200")
+    record["cover_image"] = record.get("cover_image") or ("https://picsum.photos/seed/" + record["id"] + "-cover/800/500")
     record["rating"] = 0.0
     record["review_count"] = 0
     record["is_open"] = True

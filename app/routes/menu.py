@@ -48,7 +48,7 @@ def create_menu_item(restaurant_id: str, payload: MenuItemCreate, user: dict = D
     record["restaurant_id"] = restaurant_id
     record["name"] = sanitize_text(record["name"])
     record["description"] = sanitize_text(record.get("description", ""))
-    record.setdefault("image", "/static/images/food/default-food.png")
+    record["image"] = record.get("image") or ("https://picsum.photos/seed/" + record["id"] + "/400/300")
     record["rating"] = 0.0
     record["order_count"] = 0
     menu_items_store.create(record)

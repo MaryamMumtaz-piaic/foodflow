@@ -1211,11 +1211,11 @@
   function heartIcon(filled) { return '<svg width="18" height="18" viewBox="0 0 24 24" fill="' + (filled ? '#ea580c' : 'none') + '" stroke="' + (filled ? '#ea580c' : 'currentColor') + '" stroke-width="2" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>'; }
   function placeholderFoodImage(name) {
     const seed = encodeURIComponent((name || 'food').slice(0, 40));
-    return 'https://source.unsplash.com/400x300/?food,' + seed;
+    return 'https://picsum.photos/seed/food-' + seed + '/400/300';
   }
   function placeholderRestaurantImage(name) {
     const seed = encodeURIComponent((name || 'restaurant').slice(0, 40));
-    return 'https://source.unsplash.com/600x400/?restaurant,' + seed;
+    return 'https://picsum.photos/seed/rest-' + seed + '/600/400';
   }
   function debounce(fn, wait) {
     let t;

@@ -5,7 +5,7 @@
     "category_id": "cat_res1_1",
     "name": "Seekh Kabab Platter",
     "description": "Seekh Kabab Platter prepared with beef mince, onion, garlic and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
     "price": 950.0,
     "promotional_price": 860.0,
     "ingredients": [
@@ -32,7 +32,7 @@
     "category_id": "cat_res1_2",
     "name": "Chicken Tikka",
     "description": "Chicken Tikka prepared with chicken, yogurt, spices and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=600&q=80",
     "price": 750.0,
     "promotional_price": null,
     "ingredients": [
@@ -58,7 +58,7 @@
     "category_id": "cat_res1_3",
     "name": "Malai Boti",
     "description": "Malai Boti prepared with chicken, cream, cheese and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80",
     "price": 850.0,
     "promotional_price": null,
     "ingredients": [
@@ -84,7 +84,7 @@
     "category_id": "cat_res1_4",
     "name": "Mutton Karahi (Half)",
     "description": "Mutton Karahi (Half) prepared with mutton, tomato, ginger and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80",
     "price": 1600.0,
     "promotional_price": null,
     "ingredients": [
@@ -111,7 +111,7 @@
     "category_id": "cat_res1_5",
     "name": "Dal Makhani",
     "description": "Dal Makhani prepared with lentils, butter, cream and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80",
     "price": 550.0,
     "promotional_price": null,
     "ingredients": [
@@ -137,7 +137,7 @@
     "category_id": "cat_res1_1",
     "name": "Garlic Naan",
     "description": "Garlic Naan prepared with flour, garlic, butter and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=600&q=80",
     "price": 120.0,
     "promotional_price": null,
     "ingredients": [
@@ -162,7 +162,7 @@
     "category_id": "cat_res2_1",
     "name": "Chicken Karahi (Full)",
     "description": "Chicken Karahi (Full) prepared with chicken, tomato, green chili and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80",
     "price": 1800.0,
     "promotional_price": 1620.0,
     "ingredients": [
@@ -189,7 +189,7 @@
     "category_id": "cat_res2_2",
     "name": "Lahori Chargha",
     "description": "Lahori Chargha prepared with chicken, spices, oil and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80",
     "price": 1400.0,
     "promotional_price": null,
     "ingredients": [
@@ -215,7 +215,7 @@
     "category_id": "cat_res2_3",
     "name": "Aloo Paratha",
     "description": "Aloo Paratha prepared with flour, potato, butter and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80",
     "price": 200.0,
     "promotional_price": null,
     "ingredients": [
@@ -240,7 +240,7 @@
     "category_id": "cat_res2_4",
     "name": "Nihari",
     "description": "Nihari prepared with beef, flour, spices and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=600&q=80",
     "price": 950.0,
     "promotional_price": null,
     "ingredients": [
@@ -266,7 +266,7 @@
     "category_id": "cat_res2_5",
     "name": "Chana Chaat",
     "description": "Chana Chaat prepared with chickpeas, onion, tomato and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=80",
     "price": 350.0,
     "promotional_price": null,
     "ingredients": [
@@ -293,7 +293,7 @@
     "category_id": "cat_res2_1",
     "name": "Kheer",
     "description": "Kheer prepared with milk, rice, sugar and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80",
     "price": 300.0,
     "promotional_price": null,
     "ingredients": [
@@ -319,7 +319,7 @@
     "category_id": "cat_res3_1",
     "name": "Margherita Pizza",
     "description": "Margherita Pizza prepared with flour, tomato, mozzarella cheese and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=600&q=80",
     "price": 1200.0,
     "promotional_price": 1080.0,
     "ingredients": [
@@ -356,7 +356,7 @@
     "category_id": "cat_res3_2",
     "name": "Pepperoni Pizza",
     "description": "Pepperoni Pizza prepared with flour, cheese, pepperoni and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80",
     "price": 1450.0,
     "promotional_price": null,
     "ingredients": [
@@ -393,7 +393,7 @@
     "category_id": "cat_res3_3",
     "name": "Fettuccine Alfredo",
     "description": "Fettuccine Alfredo prepared with pasta, cream, parmesan cheese and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80",
     "price": 1100.0,
     "promotional_price": null,
     "ingredients": [
@@ -419,7 +419,7 @@
     "category_id": "cat_res3_4",
     "name": "Chicken Lasagna",
     "description": "Chicken Lasagna prepared with pasta, chicken, cheese and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=600&q=80",
     "price": 1350.0,
     "promotional_price": null,
     "ingredients": [
@@ -445,7 +445,7 @@
     "category_id": "cat_res3_5",
     "name": "Bruschetta",
     "description": "Bruschetta prepared with bread, tomato, basil and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=600&q=80",
     "price": 650.0,
     "promotional_price": null,
     "ingredients": [
@@ -472,7 +472,7 @@
     "category_id": "cat_res3_1",
     "name": "Tiramisu",
     "description": "Tiramisu prepared with mascarpone cheese, coffee, cocoa and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80",
     "price": 550.0,
     "promotional_price": null,
     "ingredients": [
@@ -498,7 +498,7 @@
     "category_id": "cat_res4_1",
     "name": "Chicken Manchurian",
     "description": "Chicken Manchurian prepared with chicken, soy sauce, garlic and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80",
     "price": 950.0,
     "promotional_price": 860.0,
     "ingredients": [
@@ -524,7 +524,7 @@
     "category_id": "cat_res4_2",
     "name": "Vegetable Spring Rolls",
     "description": "Vegetable Spring Rolls prepared with cabbage, carrot, flour wrapper and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=600&q=80",
     "price": 550.0,
     "promotional_price": null,
     "ingredients": [
@@ -550,7 +550,7 @@
     "category_id": "cat_res4_3",
     "name": "Beef Chowmein",
     "description": "Beef Chowmein prepared with beef, noodles, soy sauce and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80",
     "price": 900.0,
     "promotional_price": null,
     "ingredients": [
@@ -576,7 +576,7 @@
     "category_id": "cat_res4_4",
     "name": "Sweet and Sour Chicken",
     "description": "Sweet and Sour Chicken prepared with chicken, pineapple, capsicum and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=600&q=80",
     "price": 1000.0,
     "promotional_price": null,
     "ingredients": [
@@ -602,7 +602,7 @@
     "category_id": "cat_res4_5",
     "name": "Egg Fried Rice",
     "description": "Egg Fried Rice prepared with rice, egg, soy sauce and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=600&q=80",
     "price": 650.0,
     "promotional_price": null,
     "ingredients": [
@@ -628,7 +628,7 @@
     "category_id": "cat_res4_1",
     "name": "Hot and Sour Soup",
     "description": "Hot and Sour Soup prepared with chicken stock, vinegar, chili and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1567234669003-dce7a7a88821?auto=format&fit=crop&w=600&q=80",
     "price": 450.0,
     "promotional_price": null,
     "ingredients": [
@@ -654,7 +654,7 @@
     "category_id": "cat_res5_1",
     "name": "Zinger Burger Combo",
     "description": "Zinger Burger Combo prepared with chicken fillet, bun, lettuce and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=600&q=80",
     "price": 850.0,
     "promotional_price": 760.0,
     "ingredients": [
@@ -691,7 +691,7 @@
     "category_id": "cat_res5_2",
     "name": "Beef Cheese Burger",
     "description": "Beef Cheese Burger prepared with beef patty, cheese, bun and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&q=80",
     "price": 750.0,
     "promotional_price": null,
     "ingredients": [
@@ -728,7 +728,7 @@
     "category_id": "cat_res5_3",
     "name": "Loaded Fries",
     "description": "Loaded Fries prepared with potato, cheese, beef and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80",
     "price": 550.0,
     "promotional_price": null,
     "ingredients": [
@@ -754,7 +754,7 @@
     "category_id": "cat_res5_4",
     "name": "Veggie Burger",
     "description": "Veggie Burger prepared with vegetable patty, bun, lettuce and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80",
     "price": 650.0,
     "promotional_price": null,
     "ingredients": [
@@ -791,7 +791,7 @@
     "category_id": "cat_res5_5",
     "name": "Grilled Chicken Wrap",
     "description": "Grilled Chicken Wrap prepared with chicken, tortilla, lettuce and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80",
     "price": 700.0,
     "promotional_price": null,
     "ingredients": [
@@ -817,7 +817,7 @@
     "category_id": "cat_res5_1",
     "name": "Chocolate Milkshake",
     "description": "Chocolate Milkshake prepared with milk, chocolate, ice cream and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
     "price": 400.0,
     "promotional_price": null,
     "ingredients": [
@@ -842,7 +842,7 @@
     "category_id": "cat_res6_1",
     "name": "Butter Chicken",
     "description": "Butter Chicken prepared with chicken, butter, tomato and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=600&q=80",
     "price": 1150.0,
     "promotional_price": 1040.0,
     "ingredients": [
@@ -869,7 +869,7 @@
     "category_id": "cat_res6_2",
     "name": "Palak Paneer",
     "description": "Palak Paneer prepared with spinach, paneer cheese, cream and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80",
     "price": 850.0,
     "promotional_price": null,
     "ingredients": [
@@ -895,7 +895,7 @@
     "category_id": "cat_res6_3",
     "name": "Chicken Biryani",
     "description": "Chicken Biryani prepared with rice, chicken, spices and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80",
     "price": 750.0,
     "promotional_price": null,
     "ingredients": [
@@ -933,7 +933,7 @@
     "category_id": "cat_res6_4",
     "name": "Tandoori Roti",
     "description": "Tandoori Roti prepared with flour and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80",
     "price": 60.0,
     "promotional_price": null,
     "ingredients": [
@@ -957,7 +957,7 @@
     "category_id": "cat_res6_5",
     "name": "Vegetable Korma",
     "description": "Vegetable Korma prepared with mixed vegetables, cream, cashew and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=600&q=80",
     "price": 700.0,
     "promotional_price": null,
     "ingredients": [
@@ -983,7 +983,7 @@
     "category_id": "cat_res6_1",
     "name": "Gulab Jamun",
     "description": "Gulab Jamun prepared with milk powder, sugar syrup, flour and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80",
     "price": 300.0,
     "promotional_price": null,
     "ingredients": [
@@ -1008,7 +1008,7 @@
     "category_id": "cat_res7_1",
     "name": "Salmon Sushi Platter",
     "description": "Salmon Sushi Platter prepared with salmon, rice, nori seaweed and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80",
     "price": 1800.0,
     "promotional_price": 1620.0,
     "ingredients": [
@@ -1034,7 +1034,7 @@
     "category_id": "cat_res7_2",
     "name": "California Roll",
     "description": "California Roll prepared with crab, avocado, cucumber and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80",
     "price": 1200.0,
     "promotional_price": null,
     "ingredients": [
@@ -1060,7 +1060,7 @@
     "category_id": "cat_res7_3",
     "name": "Chicken Teriyaki",
     "description": "Chicken Teriyaki prepared with chicken, soy sauce, sesame and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=600&q=80",
     "price": 1400.0,
     "promotional_price": null,
     "ingredients": [
@@ -1086,7 +1086,7 @@
     "category_id": "cat_res7_4",
     "name": "Miso Soup",
     "description": "Miso Soup prepared with soybean paste, tofu, seaweed and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=600&q=80",
     "price": 450.0,
     "promotional_price": null,
     "ingredients": [
@@ -1112,7 +1112,7 @@
     "category_id": "cat_res7_5",
     "name": "Vegetable Tempura",
     "description": "Vegetable Tempura prepared with mixed vegetables, flour, oil and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=600&q=80",
     "price": 850.0,
     "promotional_price": null,
     "ingredients": [
@@ -1137,7 +1137,7 @@
     "category_id": "cat_res7_1",
     "name": "Matcha Ice Cream",
     "description": "Matcha Ice Cream prepared with green tea, milk, sugar and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=600&q=80",
     "price": 500.0,
     "promotional_price": null,
     "ingredients": [
@@ -1162,7 +1162,7 @@
     "category_id": "cat_res8_1",
     "name": "Buddha Bowl",
     "description": "Buddha Bowl prepared with quinoa, chickpeas, avocado and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80",
     "price": 950.0,
     "promotional_price": 860.0,
     "ingredients": [
@@ -1190,7 +1190,7 @@
     "category_id": "cat_res8_2",
     "name": "Vegan Burger",
     "description": "Vegan Burger prepared with plant patty, vegan bun, lettuce and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80",
     "price": 850.0,
     "promotional_price": null,
     "ingredients": [
@@ -1228,7 +1228,7 @@
     "category_id": "cat_res8_3",
     "name": "Lentil Soup",
     "description": "Lentil Soup prepared with lentils, carrot, celery and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=600&q=80",
     "price": 550.0,
     "promotional_price": null,
     "ingredients": [
@@ -1255,7 +1255,7 @@
     "category_id": "cat_res8_4",
     "name": "Falafel Wrap",
     "description": "Falafel Wrap prepared with chickpeas, tahini, flatbread and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=600&q=80",
     "price": 750.0,
     "promotional_price": null,
     "ingredients": [
@@ -1282,7 +1282,7 @@
     "category_id": "cat_res8_5",
     "name": "Avocado Toast",
     "description": "Avocado Toast prepared with bread, avocado, lemon and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80",
     "price": 650.0,
     "promotional_price": null,
     "ingredients": [
@@ -1309,7 +1309,7 @@
     "category_id": "cat_res8_1",
     "name": "Detox Green Smoothie",
     "description": "Detox Green Smoothie prepared with spinach, banana, almond milk and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80",
     "price": 500.0,
     "promotional_price": null,
     "ingredients": [
@@ -1336,7 +1336,7 @@
     "category_id": "cat_res9_1",
     "name": "Chicken Biryani",
     "description": "Chicken Biryani prepared with rice, chicken, spices and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=600&q=80",
     "price": 450.0,
     "promotional_price": 400.0,
     "ingredients": [
@@ -1374,7 +1374,7 @@
     "category_id": "cat_res9_2",
     "name": "Beef Biryani",
     "description": "Beef Biryani prepared with rice, beef, spices and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80",
     "price": 550.0,
     "promotional_price": null,
     "ingredients": [
@@ -1411,7 +1411,7 @@
     "category_id": "cat_res9_3",
     "name": "Raita",
     "description": "Raita prepared with yogurt, cucumber, mint and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=600&q=80",
     "price": 100.0,
     "promotional_price": null,
     "ingredients": [
@@ -1437,7 +1437,7 @@
     "category_id": "cat_res9_4",
     "name": "Shami Kabab",
     "description": "Shami Kabab prepared with beef mince, lentils, spices and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=600&q=80",
     "price": 350.0,
     "promotional_price": null,
     "ingredients": [
@@ -1463,7 +1463,7 @@
     "category_id": "cat_res9_5",
     "name": "Firni",
     "description": "Firni prepared with milk, rice flour, sugar and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1567234669003-dce7a7a88821?auto=format&fit=crop&w=600&q=80",
     "price": 200.0,
     "promotional_price": null,
     "ingredients": [
@@ -1488,7 +1488,7 @@
     "category_id": "cat_res9_1",
     "name": "Chicken 65",
     "description": "Chicken 65 prepared with chicken, chili, yogurt and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?auto=format&fit=crop&w=600&q=80",
     "price": 500.0,
     "promotional_price": null,
     "ingredients": [
@@ -1514,7 +1514,7 @@
     "category_id": "cat_res10_1",
     "name": "Beef Tacos (3pc)",
     "description": "Beef Tacos (3pc) prepared with beef, tortilla, lettuce and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=600&q=80",
     "price": 700.0,
     "promotional_price": 630.0,
     "ingredients": [
@@ -1540,7 +1540,7 @@
     "category_id": "cat_res10_2",
     "name": "Chicken Quesadilla",
     "description": "Chicken Quesadilla prepared with chicken, cheese, tortilla and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80",
     "price": 750.0,
     "promotional_price": null,
     "ingredients": [
@@ -1566,7 +1566,7 @@
     "category_id": "cat_res10_3",
     "name": "Vegetarian Nachos",
     "description": "Vegetarian Nachos prepared with corn chips, cheese, beans and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80",
     "price": 600.0,
     "promotional_price": null,
     "ingredients": [
@@ -1592,7 +1592,7 @@
     "category_id": "cat_res10_4",
     "name": "Burrito Bowl",
     "description": "Burrito Bowl prepared with rice, beans, chicken and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80",
     "price": 850.0,
     "promotional_price": null,
     "ingredients": [
@@ -1618,7 +1618,7 @@
     "category_id": "cat_res10_5",
     "name": "Guacamole & Chips",
     "description": "Guacamole & Chips prepared with avocado, lime, corn chips and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
     "price": 450.0,
     "promotional_price": null,
     "ingredients": [
@@ -1644,7 +1644,7 @@
     "category_id": "cat_res10_1",
     "name": "Churros",
     "description": "Churros prepared with flour, sugar, cinnamon and served fresh.",
-    "image": "/static/images/food/default-food.png",
+    "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=600&q=80",
     "price": 400.0,
     "promotional_price": null,
     "ingredients": [
